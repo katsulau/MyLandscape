@@ -37,3 +37,17 @@ Things you may want to cover:
 - has_many :comments
 - has_many :favorites
 
+
+## postsテーブル
+
+|Column|Type|Options|
+|------|----|-------|
+|name|string|null: false|
+|image|string|null: false|
+|description|string|null: false|
+|user_id|integer|foreign_key: true|
+
+### Association
+- belongs_to :user
+- has_many :comments
+- has_many :favorites
