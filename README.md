@@ -29,8 +29,11 @@ Things you may want to cover:
 |------|----|-------|
 |nickname|string|null: false|
 |avatar|string||
+|email|string|null: false|
+|password|string|null: false|
 
 ### Association
 - has_many :posts
 - has_many :comments
+- has_many :favorites
 
