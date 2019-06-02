@@ -51,3 +51,18 @@ Things you may want to cover:
 - belongs_to :user
 - has_many :comments
 - has_many :favorites
+
+
+
+## commentsテーブル
+
+|Column|Type|Options|
+|------|----|-------|
+|description|string|null: false|
+|user_id|integer|foreign_key: true|
+|post_id|integer|foreign_key: true|
+
+### Association
+- belongs_to :user
+- belongs_to :post
+
