@@ -1,5 +1,24 @@
 .wrapper
   = render "layouts/header"
 
+  #carousel-2.carousel.slide{"data-interval" => "5000"}
+    %ol.carousel-indicators
+      %li.active{"data-slide-to" => "0", "data-target" => "#carousel-2"}
+      %li{"data-slide-to" => "1", "data-target" => "#carousel-2"}
+      %li{"data-slide-to" => "2", "data-target" => "#carousel-2"}
+    .carousel-inner
+      .carousel-item.active
+        %img.d-block.w-100{:alt => "First slide", :src => "https://placehold.it/1200x400"}/
+      .carousel-item
+        %img.d-block.w-100{:alt => "Second slide", :src => "https://placehold.it/1200x400"}/
+      .carousel-item
+        %img.d-block.w-100{:alt => "Third slide", :src => "https://placehold.it/1200x400"}/
+    %a.carousel-control-prev{"data-slide" => "prev", :href => "#carousel-2", :role => "button"}
+      %span.carousel-control-prev-icon{"aria-hidden" => "true"}
+      %span.sr-only Previous
+    %a.carousel-control-next{"data-slide" => "next", :href => "#carousel-2", :role => "button"}
+      %span.carousel-control-next-icon{"aria-hidden" => "true"}
+      %span.sr-only Next
+
   = render 'layouts/footer'
 
