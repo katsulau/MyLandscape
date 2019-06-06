@@ -7,7 +7,9 @@
       %li{"data-slide-to" => "1", "data-target" => "#carousel-2"}
       %li{"data-slide-to" => "2", "data-target" => "#carousel-2"}
     .carousel-inner
-      %p MyLandscape
+      %p.title MyLandscape
+      %p.login
+        %a.btn{:href => "#", :role => "button"} かんたんログインする »
       .carousel-item.active
         = image_tag('first-slide.jpg', class: "d-block w-100", alt: "First slide")
       .carousel-item

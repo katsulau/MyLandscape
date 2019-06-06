@@ -2,7 +2,7 @@
   .carousel-inner {
     height: (95vh);
     position: relative;
-    p {
+    .title {
       position: absolute;
       color: white;
       top: 45vh;
@@ -12,6 +12,19 @@
       font-size: 80px;
       transform: rotate(346deg); 
       font-weight: bold;
+    }
+    .login {
+      position: absolute;
+      color: white;
+      top: 80vh;
+      left: 43%;
+      z-index: 1;
+      font-weight: bold;
+      background-color: rgba(33, 39, 98, 0.5);
+      .btn {
+        color: #fff;
+        border-color: #6c757d;
+      }
     }
   }
   .about {
