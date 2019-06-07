@@ -48,8 +48,12 @@
       %p
         %a.btn.btn-secondary{:href => "#", :role => "button"} View details »
   .buttons
-    %p.easy-login
-      %a.btn{:href => "#", :role => "button"} かんたんログインする »
+    %p
+      %a.btn.easy-login{:href => "#", :role => "button"} かんたんログインする »
+    %p.registration
+      %a.btn.register{:href => "#", :role => "button"} 新規登録する »
+    %p.login
+      %a.btn.login{:href => "#", :role => "button"} ログインする »
 
   = render 'layouts/footer'
 

@@ -50,14 +50,22 @@
     height: 40vh;
     background: #060A22;
     text-align: center;
-    .easy-login {
-      color: white;
-      top: 80vh;
-      font-weight: bold;
+    color: white;
+    p {
       .btn {
+        font-weight: bold;
         color: #fff;
         border-color: #6c757d;
+        width: 250px;
+      }
+      .easy-login {
         background-color: rgba(220, 20, 60, 0.5);
+      }
+      .register {
+        background-color: rgba(20, 220, 110, 0.5);
+      }
+      .login {
+        background-color: rgba(220, 167, 20, 0.5);
       }
     }
   }
