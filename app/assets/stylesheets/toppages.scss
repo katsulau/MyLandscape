@@ -10,7 +10,7 @@
       z-index: 1;
       font-family: Brush Script MT;
       font-size: 80px;
-      transform: rotate(346deg); 
+      transform: rotate(346deg);
       font-weight: bold;
     }
     .login {
@@ -47,6 +47,9 @@
     background: #050A22;
     color: white;
     text-align: center;
+    h2 {
+      padding-top: 15px;
+    }
   }
   .buttons {
     width: 100%;
