@@ -6,24 +6,36 @@
       position: absolute;
       color: white;
       top: 45vh;
-      left: 37%;
+      width: 100%;
+      text-align: center;
       z-index: 1;
       font-family: Brush Script MT;
       font-size: 80px;
       transform: rotate(346deg);
       font-weight: bold;
     }
+    .introduction {
+      position: absolute;
+      color: white;
+      top: 75vh;
+      width: 100%;
+      text-align: center;
+      z-index: 1;
+      font-size: 20px;
+      font-weight: bold;
+    }
     .login {
       position: absolute;
       color: white;
       top: 80vh;
-      left: 43%;
+      width: 100%;
+      text-align: center;
       z-index: 1;
       font-weight: bold;
-      background-color: rgba(33, 39, 98, 0.5);
       .btn {
         color: #fff;
         border-color: #6c757d;
+        background-color: rgba(33, 39, 98, 0.5);
       }
       .btn:hover {
         opacity: 0.7;
@@ -47,6 +59,7 @@
     background: #050A22;
     color: white;
     text-align: center;
+    margin: 0;
     h2 {
       padding-top: 15px;
     }
