@@ -22,12 +22,12 @@
     %a.carousel-control-next{"data-slide" => "next", href: "#carousel-2", role: "button"}
       %span.carousel-control-next-icon{"aria-hidden" => "true"}
       %span.sr-only Next
-  
+
   .about
     .about__inner
       %p.about__inner--title MyLandscapeとは？
       %p.about__inner--description あなたの好きな景色を登録して、見ることのできるサイトです。<br>気に入った画像はお気に入りに登録していつでも見ることができます。
-      
+
   .row
     .col-lg-4
       %i.fas.fa-map-marked-alt.fa-5x
@@ -47,6 +47,9 @@
       %p 好きな景色はお気に入りに登録できます。
       %p
         %a.btn.btn-secondary{:href => "#", :role => "button"} View details »
+  .buttons
+    %p.easy-login
+      %a.btn{:href => "#", :role => "button"} かんたんログインする »
 
   = render 'layouts/footer'
 
