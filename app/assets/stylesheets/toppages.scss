@@ -25,6 +25,9 @@
         color: #fff;
         border-color: #6c757d;
       }
+      .btn:hover {
+        opacity: 0.7;
+      }
     }
   }
   .about {
@@ -51,12 +54,17 @@
     background: #060A22;
     text-align: center;
     color: white;
+    padding-top: 10vh;
     p {
       .btn {
         font-weight: bold;
         color: #fff;
         border-color: #6c757d;
         width: 250px;
+        margin: 5px 0;
+      }
+      .btn:hover {
+        opacity: 0.7;
       }
       .easy-login {
         background-color: rgba(220, 20, 60, 0.5);
