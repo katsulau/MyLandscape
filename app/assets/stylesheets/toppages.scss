@@ -1,0 +1,96 @@
+.wrapper {
+  .carousel-inner {
+    height: (95vh);
+    position: relative;
+    .title {
+      position: absolute;
+      color: white;
+      top: 45vh;
+      width: 100%;
+      text-align: center;
+      z-index: 1;
+      font-family: Brush Script MT;
+      font-size: 80px;
+      transform: rotate(346deg);
+      font-weight: bold;
+    }
+    .introduction {
+      position: absolute;
+      color: white;
+      top: 75vh;
+      width: 100%;
+      text-align: center;
+      z-index: 1;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .login {
+      position: absolute;
+      color: white;
+      top: 80vh;
+      width: 100%;
+      text-align: center;
+      z-index: 1;
+      font-weight: bold;
+      .btn {
+        color: #fff;
+        border-color: #6c757d;
+        background-color: rgba(33, 39, 98, 0.5);
+      }
+      .btn:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+  .about {
+    width: 100%;
+    height: 40vh;
+    background: #060A22;
+    color: #fff;
+    text-align: center;
+    &__inner {
+      padding: 30px 0;
+      &--title {
+        font-size: 40px;
+      }
+    }
+  }
+  .row {
+    background: #050A22;
+    color: white;
+    text-align: center;
+    margin: 0;
+    h2 {
+      padding-top: 15px;
+    }
+  }
+  .buttons {
+    width: 100%;
+    height: 40vh;
+    background: #060A22;
+    text-align: center;
+    color: white;
+    padding-top: 10vh;
+    p {
+      .btn {
+        font-weight: bold;
+        color: #fff;
+        border-color: #6c757d;
+        width: 250px;
+        margin: 5px 0;
+      }
+      .btn:hover {
+        opacity: 0.7;
+      }
+      .easy-login {
+        background-color: rgba(220, 20, 60, 0.5);
+      }
+      .register {
+        background-color: rgba(20, 220, 110, 0.5);
+      }
+      .login {
+        background-color: rgba(220, 167, 20, 0.5);
+      }
+    }
+  }
+}
