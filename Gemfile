@@ -82,3 +82,4 @@ gem 'jquery-rails'
 gem 'carrierwave'
 gem 'mini_magick'
 gem "rake"
+gem 'devise'
