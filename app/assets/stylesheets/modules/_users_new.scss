@@ -1,0 +1,15 @@
+@import "modules/variable";
+
+.wrapper {
+  background: $background-color;
+  text-align: center;
+  height: 100vh;
+  padding-top: 100px;
+  .fields {
+    background: #FFF;
+    width: 50vh;
+    margin: 0 auto;
+    border: solid  thin #f5f5f5;
+    padding: 50px;
+  }
+}
