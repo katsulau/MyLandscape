@@ -1,0 +1,30 @@
+@import "modules/variable";
+
+.registration_wrapper {
+  background: $background-color;
+  text-align: center;
+  height: 100vh;
+  padding-top: 100px;
+  .fields {
+    background: #FFF;
+    width: 70vh;
+    margin: 0 auto;
+    border: solid  thin #f5f5f5;
+    border-radius: 5px;
+    padding: 50px;
+    h2 {
+      border-bottom: solid thin rgb(200, 200, 200);
+      margin-bottom: 50px;
+      font-size: 20px;
+    }
+    .field {
+      &__name{
+        font-weight: bold;
+        text-align: left;
+      }
+    }
+    .actions {
+      margin: 30px auto;
+    }
+  }
+}
