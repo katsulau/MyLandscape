@@ -1,0 +1,32 @@
+@import "modules/variable";
+.posts-wrapper{
+  background: $background-color;
+  height: 100vh;
+  padding-top: 100px;
+  .card {
+    width: 70vh;
+    margin: 0 auto;
+    .card-body {
+      .field {
+        margin: 30px 0;
+        label {
+          font-weight: bold;
+        }
+        span {
+          background-color: rgb(234, 53, 45);
+          color: #fff;
+          font-size: 12px;
+          margin: 0 0 0 8px;
+          padding: 2px 4px;
+          border-radius: 2px;
+        }
+        .arbitrary {
+          background-color: rgb(160, 160, 160);
+        }
+      }
+      .action {
+        text-align: center;
+      }
+    }
+  }
+}
