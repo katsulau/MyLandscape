@@ -1,0 +1,25 @@
+= render "layouts/header"
+.posts-wrapper
+  .card
+    .card-header
+      新規投稿
+    .card-body
+      = form_with url: posts_path do |f|
+        .field
+          %label 投稿したい場所の名前
+          %span 必須
+          = f.text_field :name, autofocus: true, class: "form-control"
+
+        .field
+          %label image
+          %span 必須
+          = f.file_field :image, style:"display:none;", id: "file"
+          .preview{ onClick: "$('#file').click()"}
+            %i.far.fa-image.fa-5x
+        .field
+          %label 説明文
+          %span.arbitrary 任意
+          = f.text_area :name, class: "form-control"
+
+        .action
+          = f.submit "投稿する", class: "btn btn-primary"
