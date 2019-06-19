@@ -23,6 +23,24 @@
         .arbitrary {
           background-color: rgb(160, 160, 160);
         }
+        .preview {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 0 auto;
+          border: solid 1px #CED4DA;
+          position: relative;
+          border-radius: 5px;
+          cursor: pointer;
+          width: 300px;
+          height: 250px;
+          background-position: center;
+          background-color: #fff;
+          i {
+            display: block;
+            color: rgb(190, 190, 190);
+          }
+        }
       }
       .action {
         text-align: center;
