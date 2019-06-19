@@ -13,8 +13,9 @@
         .field
           %label image
           %span 必須
-          = f.file_field :image
-
+          = f.file_field :image, style:"display:none;", id: "file"
+          .preview{ onClick: "$('#file').click()"}
+            %i.far.fa-image.fa-5x
         .field
           %label 説明文
           %span.arbitrary 任意
