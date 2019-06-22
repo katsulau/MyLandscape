@@ -1,6 +1,4 @@
 .wrapper
-  = render "layouts/header"
-
   #carousel-2.carousel.slide{"data-interval" => "5000"}
     %ol.carousel-indicators
       %li.active{"data-slide-to" => "0", "data-target" => "#carousel-2"}
@@ -55,6 +53,3 @@
       %a.btn.register{:href => "#", :role => "button"} 新規登録する »
     %p.login
       %a.btn.login{:href => "#", :role => "button"} ログインする »
-
-  = render 'layouts/footer'
-
