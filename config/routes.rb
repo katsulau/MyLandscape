@@ -4,5 +4,7 @@ Rails.application.routes.draw do
 
   resources :posts, only:[:index, :new, :create, :edit]
 
+  resources :users, only:[:index]
+
   root "toppages#index"
 end
