@@ -7,6 +7,8 @@
       = render 'comment'
   .side-contents
     .wikipedia
+      = @page.summary
+      = link_to "詳しい説明はこちら", @page.fullurl, target: :_blank
     .googleMap
       #map_container
         #map_canvas
