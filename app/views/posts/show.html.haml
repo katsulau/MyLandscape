@@ -1,6 +1,6 @@
 .posts-show-wrapper.clearfix
   .contents
-    .title ベネチア
+    .title#name ベネチア
     .post
       = image_tag('second-slide.jpg')
     .comments
@@ -8,4 +8,7 @@
   .side-contents
     .wikipedia
     .googleMap
+      #map_container
+        #map_canvas
+    .rank
     = render 'ranking'
