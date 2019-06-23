@@ -1,0 +1,24 @@
+@import "mixin/clearfix";
+.posts-show-wrapper {
+  @include clearfix();
+  .contents {
+    width: 50vw;
+    float: left;
+    .title {
+      border-bottom: solid thin rgb(200, 200, 200);
+    }
+    .post {
+      height: 50vh;
+      border: solid thin rgb(200, 200, 200);
+      img {
+        height: 50vh;
+      }
+    }
+    .comments {
+      border: solid thin rgb(200, 200, 200);
+    }
+  }
+  .side-contents {
+    float: left;
+  }
+}
