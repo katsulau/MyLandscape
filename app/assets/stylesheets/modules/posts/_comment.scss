@@ -1,0 +1,27 @@
+@import "mixin/clearfix";
+.comment {
+  @include clearfix();
+  padding: 20px;
+  .icon {
+    height: 50px;
+    width: 50px;
+    background: rgb(157, 158, 158);
+    border-radius: 25px;
+    float: left;
+  }
+  .contents {
+    float: left;
+    width: 40vw;
+    .message-body {
+      width: 40vw;
+      height: 10vh;
+      padding: 16px;
+      background: #eef0f4;
+      border-radius: 15px;
+      line-height: 1.5;
+      word-break: break-all;
+      margin-top: 5px;
+      margin-right: 20px;
+    }
+  }
+}
