@@ -1,41 +1,101 @@
 @import "mixin/clearfix";
 .posts-show-wrapper {
-  @include clearfix();
+  background: #E9EBEE;
   .contents {
-    width: 50vw;
-    float: left;
-    .title {
-      border-bottom: solid thin rgb(200, 200, 200);
-    }
-    .post {
-      height: 50vh;
-      border: solid thin rgb(200, 200, 200);
-      img {
-        height: 50vh;
+    display: flex;
+    justify-content: center;
+    .main-contents {
+      width: 50vw;
+      margin: 100px 0;
+      .card {
+        .card-body {
+          padding: 10px;
+          display: flex;
+          .card-title {
+            font-weight: bold;
+            font-size: 20px;
+            margin: 10px;
+            font-family: 'Noto Sans JP', sans-serif;
+            float: left;
+          }
+          .profile {
+            margin-left: auto;
+            display: flex;
+            .image {
+              border: solid thin rgb(200, 200, 200);
+              width: 40px;
+              height: 40px;
+              border-radius: 20px;
+              text-align: center;
+              line-height: 45px;
+            }
+            .username {
+              padding: 10px;
+            }
+          }
+        }
+      }
+      .post {
+        height: 60vh;
+        img {
+          height: 60vh;
+          width: 100%;
+        }
+      }
+      .comments {
+        border: solid thin rgb(200, 200, 200);
+        border-top: none;
+        background: #fff;
+        margin-bottom: 20px;
+        padding-top: 20px;
+        .heading {
+          display: flex;
+          flex-direction: column;
+          border-bottom: solid thin rgb(200, 200, 200);
+          padding: 20px;
+          .btn {
+            color: #fff;
+            border-color: rgba(220, 167, 20, 0.5);
+            width: 250px;
+            margin: 5px 0;
+            background-color: rgb(220, 167, 20);
+            text-align: center;
+            margin: 0 auto;
+          }
+          .btn:hover {
+            opacity: 0.7;
+          }
+        }
+      }
+      .wikipedia {
+        background: #fff;
+        margin: 20px 0;
+        border-radius: 5px;
+        padding: 20px;
+        .fa-wikipedia-w {
+          border: 1px solid #ccc;
+          border-radius: 2px;
+        }
+      }
+      .googleMap {
+        #map_container {
+          clear: both;
+          width: 100%;
+          padding: 4px;
+          border: 1px solid #CCC;
+        }
+        #map_canvas {
+          width: 100%;
+          height: 70vh;
+        }
+        #map_content {
+          width: 100px;
+          height: 70px;
+        }
       }
     }
-    .comments {
-      border: solid thin rgb(200, 200, 200);
-    }
-  }
-  .side-contents {
-    float: left;
-    width: 50vw;
-    .googleMap {
-      #map_container {
-        clear: both;
-        width: 90%;
-        padding: 4px;
-        border: 1px solid #CCC;
-      }
-      #map_canvas {
-        width: 100%;
-        height: 70vh;
-      }
-      #map_content {
-        width: 100px;
-        height: 70px;
-      }
+    .side-contents {
+      padding: 100px 30px;
     }
   }
 }
