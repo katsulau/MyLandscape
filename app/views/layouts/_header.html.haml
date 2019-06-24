@@ -1,11 +1,11 @@
 %nav.navbar.navbar-expand-lg.navbar-dark{style: "background-color: rgb(0, 0, 0);"}
-  %a.navbar-brand{:href => "#"} MyLandscape
+  = link_to "MyLandscape", root_path, class: "navbar-brand"
   .navbar-collapse.collapse.w-100.order-3.dual-collapse2
     %ul.navbar-nav.ml-auto
       %li.nav-item
-        %a.nav-link{:href => "#"} 投稿一覧
+        = link_to "投稿一覧", posts_path, class: "nav-link"
       %li.nav-item
-        %a.nav-link{:href => "#"} マイページ
+        = link_to "マイページ", users_path, class: "nav-link"
       %li.nav-item.dropdown
         %a#navbarDropdown.nav-link.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
           Language
