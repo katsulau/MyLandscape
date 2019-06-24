@@ -1,16 +1,31 @@
-.posts-show-wrapper.clearfix
+.posts-show-wrapper
   .contents
-    .title#name ベネチア
-    .post
-      = image_tag('second-slide.jpg')
-    .comments
-      = render 'comment'
-  .side-contents
-    .wikipedia
-      = @page.summary
-      = link_to "詳しい説明はこちら", @page.fullurl, target: :_blank
-    .googleMap
-      #map_container
-        #map_canvas
-    .rank
-    = render 'ranking'
+    .main-contents
+      .card
+        .card-body
+          %h5.card-title#name ベネチア
+          .profile
+            .image
+              %i.fas.fa-user-alt.fa-lg
+            .username username
+      .post
+        = image_tag('second-slide.jpg')
+      .comments
+        .heading
+          %i.fas.fa-comment
+            コメント
+          %a.btn{:href => "#", :role => "button"} ログインしてコメントする
+        = render 'comment'
+      .wikipedia
+        %h5
+          %i.fab.fa-wikipedia-w.fa-2x
+          Wikipedia情報
+        .info
+          = @page.summary
+          = link_to "詳しい説明はこちら", @page.fullurl, target: :_blank
+      .googleMap
+        #map_container
+          #map_canvas
+    .side-contents
+      .rank
+      = render 'ranking'
