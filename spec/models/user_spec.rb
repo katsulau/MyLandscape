@@ -7,6 +7,11 @@ describe User do
       expect(user).to be_valid
     end
 
+    it "is valid without an image" do
+      user = build(:user, image: nil)
+      expect(user).to be_valid
+    end
+
     it "is invalid without a name" do
       user = build(:user, name: nil)
       user.valid?
