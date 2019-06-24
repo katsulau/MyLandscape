@@ -2,11 +2,13 @@
 .comment {
   @include clearfix();
   padding: 20px;
-  .icon {
-    height: 50px;
+  .profile {
+    border: solid thin rgb(200, 200, 200);
     width: 50px;
-    background: rgb(157, 158, 158);
+    height: 50px;
     border-radius: 25px;
+    text-align: center;
+    line-height: 65px;
     float: left;
   }
   .contents {
