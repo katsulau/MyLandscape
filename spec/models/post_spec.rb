@@ -15,5 +15,11 @@ describe Post do
       post = build(:post, user_id: @user.id, description: nil)
       expect(post).to be_valid
     end
+
+    it "is invalid without a name" do
+      post = build(:post, user_id: @user.id, name: nil)
+      post.valid?
+      expect(post.errors[:name]).to include("can't be blank")
+    end
   end
 end
