@@ -10,5 +10,10 @@ describe Post do
       post = build(:post, user_id: @user.id)
       expect(post).to be_valid
     end
+
+    it "is valid without a description" do
+      post = build(:post, user_id: @user.id, description: nil)
+      expect(post).to be_valid
+    end
   end
 end
