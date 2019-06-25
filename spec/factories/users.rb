@@ -1,11 +1,13 @@
 FactoryBot.define do
 
-  factory :user do
-    name                  {"testname"}
+  pass = Faker::Internet.password(8)
+
+  factory :user, class: User do
+    name                  {Faker::Name.name}
     image                 {"xxxx.jpg"}
-    email                 {"test@gmail.com"}
-    password              {"00000000"}
-    password_confirmation {"00000000"}
+    email                 {Faker::Internet.email}
+    password              {pass}
+    password_confirmation {pass}
   end
 
 end
