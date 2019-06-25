@@ -21,5 +21,11 @@ describe Post do
       post.valid?
       expect(post.errors[:name]).to include("can't be blank")
     end
+
+    it "is invalid without an image" do
+      post = build(:post, user_id: @user.id, image: nil)
+      post.valid?
+      expect(post.errors[:image]).to include("can't be blank")
+    end
   end
 end
