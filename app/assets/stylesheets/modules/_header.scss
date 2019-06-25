@@ -1,3 +1,19 @@
 .navbar {
   height: 7vh;
+  .nav-item {
+    margin: 10px;
+    .btn {
+      color: #fff;
+      border-color: #6c757d;
+    }
+    .btn:hover {
+      opacity: 0.5;
+    }
+    .register {
+      background-color: rgba(220, 20, 60, 0.7);
+    }
+    .login {
+      background-color: rgba(220, 167, 20, 0.7);
+    }
+  }
 }
