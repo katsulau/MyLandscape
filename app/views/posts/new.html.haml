@@ -3,7 +3,7 @@
     .card-header
       新規投稿
     .card-body
-      = form_with url: posts_path do |f|
+      = form_with model: Post, local: true do |f|
         .field
           %label 投稿したい場所の名前
           %span 必須
