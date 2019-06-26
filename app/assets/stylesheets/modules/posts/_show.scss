@@ -50,11 +50,16 @@
           width: 100%;
         }
       }
+      .description {
+        background: #fff;
+        padding: 20px;
+        border: solid thin rgb(200, 200, 200);
+      }
       .comments {
         border: solid thin rgb(200, 200, 200);
         border-top: none;
         background: #fff;
-        margin-bottom: 20px;
+        margin: 20px 0;
         padding-top: 20px;
         .heading {
           display: flex;

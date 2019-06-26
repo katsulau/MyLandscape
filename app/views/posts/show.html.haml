@@ -15,6 +15,8 @@
               = @post.user.name
       .post
         = image_tag @post.image.to_s
+      .description
+        = @post.description
       .comments
         .heading
           %i.fas.fa-comment
