@@ -29,6 +29,14 @@
               text-align: center;
               line-height: 45px;
             }
+            .img {
+              border: solid thin rgb(200, 200, 200);
+              width: 40px;
+              height: 40px;
+              border-radius: 20px;
+              text-align: center;
+              line-height: 45px;
+            }
             .username {
               padding: 10px;
             }
@@ -42,11 +50,16 @@
           width: 100%;
         }
       }
+      .description {
+        background: #fff;
+        padding: 20px;
+        border: solid thin rgb(200, 200, 200);
+      }
       .comments {
         border: solid thin rgb(200, 200, 200);
         border-top: none;
         background: #fff;
-        margin-bottom: 20px;
+        margin: 20px 0;
         padding-top: 20px;
         .heading {
           display: flex;

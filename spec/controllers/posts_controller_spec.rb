@@ -16,14 +16,32 @@ describe PostsController, type: :controller  do
     end
 
     it "saves the new post in the database" do
-      expect do
-        post :create, params: { post: attributes_for(:post) }
-      end.to change(Post, :count).by(1)
+      expect {
+        post :create, params: { user_id: user.id, post: attributes_for(:post) }
+      }.to change(Post, :count).by(1)
     end
 
     it "redirects to posts#index" do
-      post :create, params: { post: attributes_for(:post) }
+      post :create, params: { user_id: user.id, post: attributes_for(:post) }
       expect(response).to redirect_to posts_path
+    end
+  end
+
+  describe 'GET #show' do
+    before do
+      login_user user
+    end
+
+    it "assigns the requested post to @post" do
+      post = create(:post, user_id: user.id)
+      get :show, params: { id: post }
+      expect(assigns(:post)).to eq post
+    end
+
+    it "renders the :show template" do
+      post = create(:post, user_id: user.id)
+      get :show, params: { id: post }
+      expect(response).to render_template :show
     end
   end
 end
