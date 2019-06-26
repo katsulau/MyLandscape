@@ -19,7 +19,8 @@ class PostsController < ApplicationController
   end
 
   def show
-    @page = Wikipedia.find('ベネチア')
+    @post = Post.find(params[:id])
+    @wiki = Wikipedia.find(@post.name)
   end
 
   private
