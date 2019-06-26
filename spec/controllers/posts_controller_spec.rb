@@ -16,13 +16,13 @@ describe PostsController, type: :controller  do
     end
 
     it "saves the new post in the database" do
-      expect do
-        post :create, params: { post: attributes_for(:post) }
-      end.to change(Post, :count).by(1)
+      expect {
+        post :create, params: { user_id: user.id, post: attributes_for(:post) }
+      }.to change(Post, :count).by(1)
     end
 
     it "redirects to posts#index" do
-      post :create, params: { post: attributes_for(:post) }
+      post :create, params: { user_id: user.id, post: attributes_for(:post) }
       expect(response).to redirect_to posts_path
     end
   end
