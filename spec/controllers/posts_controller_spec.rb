@@ -37,5 +37,11 @@ describe PostsController, type: :controller  do
       get :show, params: { id: post }
       expect(assigns(:post)).to eq post
     end
+
+    it "renders the :show template" do
+      post = create(:post, user_id: user.id)
+      get :show, params: { id: post }
+      expect(response).to render_template :show
+    end
   end
 end
