@@ -3,13 +3,18 @@
     .main-contents
       .card
         .card-body
-          %h5.card-title#name ベネチア
+          %h5.card-title#name
+            = @post.name
           .profile
-            .image
-              %i.fas.fa-user-alt.fa-lg
-            .username username
+            - if @post.user.image.nil?
+              .image
+                %i.fas.fa-user-alt.fa-lg
+            - else
+              = image_tag @post.user.image.to_s, class: "img"
+            .username
+              = @post.user.name
       .post
-        = image_tag('second-slide.jpg')
+        = image_tag @post.image.to_s
       .comments
         .heading
           %i.fas.fa-comment
@@ -21,8 +26,8 @@
           %i.fab.fa-wikipedia-w.fa-2x
           Wikipedia情報
         .info
-          = @page.summary
-          = link_to "詳しい説明はこちら", @page.fullurl, target: :_blank
+          = @wiki.summary
+          = link_to "詳しい説明はこちら", @wiki.fullurl, target: :_blank
       .googleMap
         #map_container
           #map_canvas
