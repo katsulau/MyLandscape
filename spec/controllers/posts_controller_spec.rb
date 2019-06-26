@@ -26,4 +26,16 @@ describe PostsController, type: :controller  do
       expect(response).to redirect_to posts_path
     end
   end
+
+  describe 'GET #show' do
+    before do
+      login_user user
+    end
+
+    it "assigns the requested post to @post" do
+      post = create(:post, user_id: user.id)
+      get :show, params: { id: post }
+      expect(assigns(:post)).to eq post
+    end
+  end
 end
