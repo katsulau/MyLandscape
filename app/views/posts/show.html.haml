@@ -6,7 +6,7 @@
           %h5.card-title#name
             = @post.name
           .profile
-            - if @post.user.image.nil?
+            - if @post.user.image.blank?
               .image
                 %i.fas.fa-user-alt.fa-lg
             - else
