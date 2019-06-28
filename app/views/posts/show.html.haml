@@ -21,7 +21,8 @@
         .heading
           %i.fas.fa-comment
             コメント
-          %a.btn{:href => "#", :role => "button"} ログインしてコメントする
+          - unless current_user
+            = link_to "ログインしてコメントする", user_session_path, role: "button", class: "btn"
         = render 'comment'
       .wikipedia
         %h5
