@@ -1,4 +1,11 @@
 @import "mixin/clearfix";
+.comment-input {
+  text-align: center;
+  .form-control {
+    width: 90%;
+    margin: 20px auto;
+  }
+}
 .comment {
   @include clearfix();
   padding: 20px;
