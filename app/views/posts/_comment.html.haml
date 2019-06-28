@@ -1,28 +1,20 @@
--if current_user
+- if current_user
   .comment-input
     = form_with( url: post_comments_path(post_id: params[:id]), local: true ) do |f|
       .field
       = f.text_area :text, class: "form-control", placeholder: "コメントする", rows: "3"
       .action
       = f.submit "送信する", class: "btn btn-primary"
-.comment.clearfix
-  .profile
-    %i.fas.fa-user-alt.fa-2x
-  .contents
-    .username ユーザーネーム
-    .message-body
-      ここにコメントが入ります。
-.comment.clearfix
-  .profile
-    %i.fas.fa-user-alt.fa-2x
-  .contents
-    .username ユーザーネーム
-    .message-body
-      ここにコメントが入ります。
-.comment.clearfix
-  .profile
-    %i.fas.fa-user-alt.fa-2x
-  .contents
-    .username ユーザーネーム
-    .message-body
-      ここにコメントが入ります。
+- @comments.each do |comment|
+  .comment.clearfix
+    .profile
+      - if comment.user.image.blank?
+        .image
+          %i.fas.fa-user-alt.fa-lg
+      - else
+        = image_tag comment.user.image.to_s, class: "img"
+    .contents
+      .username
+        = comment.user.name
+      .message-body
+        = comment.text
