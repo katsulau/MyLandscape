@@ -7,18 +7,18 @@
             = @post.name
           .profile
             - if @post.user.image.blank?
-              .image
+              .profile__defaultImage
                 %i.fas.fa-user-alt.fa-lg
             - else
-              = image_tag @post.user.image.to_s, class: "img"
-            .username
+              = image_tag @post.user.image.to_s, class: "profile__image"
+            .profile__username
               = @post.user.name
-      .post
+      .postImage
         = image_tag @post.image.to_s
       .description
         = @post.description
       .comments
-        .heading
+        .comments__heading
           %i.fas.fa-comment
             コメント
           - unless current_user
@@ -30,7 +30,7 @@
                 = f.text_area :text, class: "form-control", id: "message-box", placeholder: "コメントする", rows: "3"
                 .action
                 = f.submit "送信する", class: "btn btn-primary"
-        .content
+        .comments__content
           = render 'comment'
       .wikipedia
         %h5
