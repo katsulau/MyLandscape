@@ -1,13 +1,13 @@
 - @comments.reverse.each do |comment|
   .comment.clearfix
-    .profile
+    .userIcon
       - if comment.user.image.blank?
-        .image
+        .userIcon__defaultImage
           %i.fas.fa-user-alt.fa-lg
       - else
-        = image_tag comment.user.image.to_s, class: "img"
+        = image_tag comment.user.image.to_s, class: "userIcon__image"
     .contents
-      .username
+      .contents__username
         = comment.user.name
-      .message-body
+      .contents__message
         = comment.text
