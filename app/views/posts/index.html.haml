@@ -1,15 +1,7 @@
 .posts-index-wrapper.clearfix
   .contents
-    .posts.clearfix
-      .post
-      .post
-      .post
-      .post
-      .post
-      .post
-      .post
-      .post
-      .post
+    .posts
+      - @posts.each do |post|
+        = link_to "/posts/#{post.id}" do
+          = image_tag post.image.to_s, class: "post"
     .pagination
-  .sideContent
-    = render 'ranking'
