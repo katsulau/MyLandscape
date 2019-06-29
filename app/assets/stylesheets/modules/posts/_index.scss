@@ -3,23 +3,18 @@
 @import "mixin/post";
 
 .posts-index-wrapper{
-  @include clearfix();
   background: $background-color;
   padding-bottom: 10vh;
   .contents {
-    @include clearfix();
-    float: left;
     .posts {
       width: 1000px;
       padding-top: 50px;
+      margin: 0 auto;
       .post {
         @include post();
         float: left;
         margin: 10px;
       }
     }
-  }
-  .sideContent {
-    float: left;
   }
 }
