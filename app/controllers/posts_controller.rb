@@ -21,6 +21,7 @@ class PostsController < ApplicationController
   def show
     @post = Post.find(params[:id])
     @wiki = Wikipedia.find(@post.name)
+    @comments = @post.comments.includes(:user)
   end
 
   private

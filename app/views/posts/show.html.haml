@@ -6,23 +6,32 @@
           %h5.card-title#name
             = @post.name
           .profile
-            - if @post.user.image.nil?
-              .image
+            - if @post.user.image.blank?
+              .profile__defaultImage
                 %i.fas.fa-user-alt.fa-lg
             - else
-              = image_tag @post.user.image.to_s, class: "img"
-            .username
+              = image_tag @post.user.image.to_s, class: "profile__image"
+            .profile__username
               = @post.user.name
-      .post
+      .postImage
         = image_tag @post.image.to_s
       .description
         = @post.description
       .comments
-        .heading
+        .comments__heading
           %i.fas.fa-comment
             コメント
-          %a.btn{:href => "#", :role => "button"} ログインしてコメントする
-        = render 'comment'
+          - unless current_user
+            = link_to "ログインしてコメントする", user_session_path, role: "button", class: "btn"
+          - if current_user
+            .comment-input
+              = form_with( url: post_comments_path(post_id: params[:id]), local: true, class: "new-message" ) do |f|
+                .field
+                = f.text_area :text, class: "form-control", id: "message-box", placeholder: "コメントする", rows: "3"
+                .action
+                = f.submit "送信する", class: "btn btn-primary"
+        .comments__content
+          = render 'comment'
       .wikipedia
         %h5
           %i.fab.fa-wikipedia-w.fa-2x

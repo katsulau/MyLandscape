@@ -1,21 +1,13 @@
-.comment.clearfix
-  .profile
-    %i.fas.fa-user-alt.fa-2x
-  .contents
-    .username ユーザーネーム
-    .message-body
-      ここにコメントが入ります。
-.comment.clearfix
-  .profile
-    %i.fas.fa-user-alt.fa-2x
-  .contents
-    .username ユーザーネーム
-    .message-body
-      ここにコメントが入ります。
-.comment.clearfix
-  .profile
-    %i.fas.fa-user-alt.fa-2x
-  .contents
-    .username ユーザーネーム
-    .message-body
-      ここにコメントが入ります。
+- @comments.reverse.each do |comment|
+  .comment.clearfix
+    .userIcon
+      - if comment.user.image.blank?
+        .userIcon__defaultImage
+          %i.fas.fa-user-alt.fa-lg
+      - else
+        = image_tag comment.user.image.to_s, class: "userIcon__image"
+    .contents
+      .contents__username
+        = comment.user.name
+      .contents__message
+        = comment.text

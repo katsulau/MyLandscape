@@ -2,19 +2,34 @@
 .comment {
   @include clearfix();
   padding: 20px;
-  .profile {
-    border: solid thin rgb(200, 200, 200);
-    width: 50px;
-    height: 50px;
-    border-radius: 25px;
-    text-align: center;
-    line-height: 65px;
+  .userIcon {
     float: left;
+    &__defaultImage {
+      border: solid thin rgb(200, 200, 200);
+      width: 40px;
+      height: 40px;
+      border-radius: 20px;
+      text-align: center;
+      line-height: 45px;
+    }
+    &__image {
+      border: solid thin rgb(200, 200, 200);
+      width: 40px;
+      height: 40px;
+      border-radius: 20px;
+      text-align: center;
+      line-height: 45px;
+    }
   }
   .contents {
     float: left;
     width: 40vw;
-    .message-body {
+    display: flex;
+    flex-direction: column;
+    &__username {
+      padding: 10px;
+    }
+    &__message {
       width: 40vw;
       height: 10vh;
       padding: 16px;

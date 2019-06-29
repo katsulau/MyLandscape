@@ -21,7 +21,7 @@
           .profile {
             margin-left: auto;
             display: flex;
-            .image {
+            &__defaultImage {
               border: solid thin rgb(200, 200, 200);
               width: 40px;
               height: 40px;
@@ -29,7 +29,7 @@
               text-align: center;
               line-height: 45px;
             }
-            .img {
+            &__image {
               border: solid thin rgb(200, 200, 200);
               width: 40px;
               height: 40px;
@@ -37,13 +37,13 @@
               text-align: center;
               line-height: 45px;
             }
-            .username {
+            &__username {
               padding: 10px;
             }
           }
         }
       }
-      .post {
+      .postImage {
         height: 60vh;
         img {
           height: 60vh;
@@ -61,7 +61,7 @@
         background: #fff;
         margin: 20px 0;
         padding-top: 20px;
-        .heading {
+        &__heading {
           display: flex;
           flex-direction: column;
           border-bottom: solid thin rgb(200, 200, 200);
@@ -78,6 +78,17 @@
           .btn:hover {
             opacity: 0.7;
           }
+          .comment-input {
+            text-align: center;
+            .form-control {
+              width: 90%;
+              margin: 20px auto;
+            }
+          }
+        }
+        &__content {
+          height: 60vh;
+          overflow: auto;
         }
       }
       .wikipedia {
