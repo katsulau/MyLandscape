@@ -23,7 +23,15 @@
             コメント
           - unless current_user
             = link_to "ログインしてコメントする", user_session_path, role: "button", class: "btn"
-        = render 'comment'
+          - if current_user
+            .comment-input
+              = form_with( url: post_comments_path(post_id: params[:id]), local: true, class: "new-message" ) do |f|
+                .field
+                = f.text_area :text, class: "form-control", id: "message-box", placeholder: "コメントする", rows: "3"
+                .action
+                = f.submit "送信する", class: "btn btn-primary"
+        .content
+          = render 'comment'
       .wikipedia
         %h5
           %i.fab.fa-wikipedia-w.fa-2x
