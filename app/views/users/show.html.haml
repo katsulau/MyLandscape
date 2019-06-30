@@ -1,15 +1,18 @@
 .users-index-wrapper
-  .contents
-    .posts.clearfix
-      .post
-      .post
-      .post
-      .post
-      .post
-      .post
-    .pagination
-  .profile
-    .profile__icon
-    .profile__info
-      .profile__info--username ユーザーネーム
-      %button.btn.btn-secondary{:type => "button"} プロフィールを編集
+  %main.contents
+    .profile
+      .profile__icon
+        - if @user.image.blank?
+          .profile__defaultImage
+            %i.fas.fa-user-alt.fa-4x
+        - else
+          = image_tag @user.image.url, class: "image"
+      .profile__info
+        .profile__info--username
+          = @user.name
+        %button.btn.btn-secondary{:type => "button"} プロフィールを編集
+    .posts
+      - @posts.each do |post|
+        = link_to post_path(post) do
+          = image_tag post.image.url, class: "post"
+    = paginate @posts
