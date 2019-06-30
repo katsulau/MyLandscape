@@ -1,7 +1,7 @@
-.posts-index-wrapper.clearfix
+.posts-index-wrapper
   .contents
-    .posts
+    .posts.clearfix
       - @posts.each do |post|
         = link_to "/posts/#{post.id}" do
           = image_tag post.image.to_s, class: "post"
-    .pagination
+    = paginate @posts
