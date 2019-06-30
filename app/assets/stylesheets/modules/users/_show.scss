@@ -4,37 +4,40 @@
 
 .users-index-wrapper {
   background: $background-color;
-  height: 83vh;
-  @include clearfix();
+  display: flex;
+  justify-content: center;
   .contents {
-    float: left;
+    padding: 10vh;
     .posts {
       @include clearfix();
-      width: 1000px;
-      padding-top: 50px;
+      width: 970px;
       .post {
-        @include post();
-        float: left;
+        cursor: pointer;
+        width: 300px;
+        height: 250px;
         margin: 10px;
+        float: left;
       }
     }
   }
   .profile {
-    margin: 60px 20px;
-    float: left;
-    width: 25vw;
-    height: 30vh;
-    border: solid 1px #CED4DA;
-    background: #fff;
-    border-radius: 5px;
     @include clearfix();
     &__icon {
       border: solid 1px #CED4DA;
-      border-radius: 5px;
+      border-radius: 50px;
       width: 100px;
       height: 100px;
       margin: 30px;
       float: left;
+      .profile__defaultImage {
+        text-align: center;
+        line-height: 140px;
+      }
+      .image {
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+      }
     }
     &__info {
       float: left;
