@@ -9,6 +9,8 @@
           = f.file_field :image, style:"display:none;", id: "file"
           .preview{ onClick: "$('#file').click()" }
             %i.fas.fa-plus
+            - if @user.image.present?
+              = image_tag @user.image.to_s
       .field
         .field__name
           = f.label :name
