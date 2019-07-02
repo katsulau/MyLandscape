@@ -86,6 +86,7 @@ gem 'erb2haml'
 gem 'jquery-rails'
 gem 'carrierwave'
 gem 'mini_magick'
+gem 'fog-google'
 gem "rake"
 gem 'devise'
 gem 'wikipedia-client'
