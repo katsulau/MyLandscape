@@ -20,7 +20,8 @@ set :default_env, {
   rbenv_root: "/usr/local/rbenv",
   path: "/usr/local/rbenv/shims:/usr/local/rbenv/bin:$PATH",
   GOOGLE_STORAGE_ACCESS_KEY_ID: ENV["GOOGLE_STORAGE_ACCESS_KEY_ID"],
-  GOOGLE_STORAGE_SECRET_ACCESS_KEY: ENV["GOOGLE_STORAGE_SECRET_ACCESS_KEY"]
+  GOOGLE_STORAGE_SECRET_ACCESS_KEY: ENV["GOOGLE_STORAGE_SECRET_ACCESS_KEY"],
+  GOOGLEMAP_API_KEY: ENV["GOOGLEMAP_API_KEY"]
 }
 
 after 'deploy:publishing', 'deploy:restart'
@@ -28,6 +29,8 @@ namespace :deploy do
   task :restart do
     invoke 'unicorn:restart'
   end
+
+  set :linked_files, %w{ config/master.key }
 
   desc 'upload master.key'
   task :upload do
