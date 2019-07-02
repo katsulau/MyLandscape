@@ -10,9 +10,10 @@
       .profile__info
         .profile__info--username
           = @user.name
-        %button.btn.btn-secondary{:type => "button"} プロフィールを編集
+        = link_to edit_user_path(@user), data: {"turbolinks"=>false} do
+          %button.btn.btn-secondary{:type => "button"} プロフィールを編集
     .posts
       - @posts.each do |post|
-        = link_to post_path(post) do
+        = link_to post_path(post), data: {"turbolinks"=>false} do
           = image_tag post.image.url, class: "post"
     = paginate @posts

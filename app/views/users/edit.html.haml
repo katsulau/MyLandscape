@@ -9,6 +9,8 @@
           = f.file_field :image, style:"display:none;", id: "file"
           .preview{ onClick: "$('#file').click()" }
             %i.fas.fa-plus
+            - if @user.image.present?
+              = image_tag @user.image.to_s
       .field
         .field__name
           = f.label :name
@@ -16,3 +18,4 @@
           = f.text_field :name, autofocus: true, autocomplete: "name", class: "form-control"
       .actions
         = f.submit "Update", class: "btn btn-primary"
+      = link_to "Back", user_path(@user), class: "btn btn-primary"
