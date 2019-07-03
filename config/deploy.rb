@@ -19,8 +19,8 @@ set :keep_releases, 5
 set :default_env, {
   rbenv_root: "/usr/local/rbenv",
   path: "/usr/local/rbenv/shims:/usr/local/rbenv/bin:$PATH",
-  GOOGLE_STORAGE_ACCESS_KEY_ID: ENV["GOOGLE_STORAGE_ACCESS_KEY_ID"],
-  GOOGLE_STORAGE_SECRET_ACCESS_KEY: ENV["GOOGLE_STORAGE_SECRET_ACCESS_KEY"],
+  AWS_ACCESS_KEY_ID: ENV["AWS_ACCESS_KEY_ID"],
+  AWS_SECRET_ACCESS_KEY: ENV["AWS_SECRET_ACCESS_KEY"],
   GOOGLEMAP_API_KEY: ENV["GOOGLEMAP_API_KEY"]
 }
 
