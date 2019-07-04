@@ -57,7 +57,10 @@
         .favorite {
           display: flex;
           padding-bottom: 10px;
-          #good {
+          #good-btn{
+            cursor: pointer;
+          }
+          #good-text {
             margin: 0;
             padding: 0 5px;
           }
