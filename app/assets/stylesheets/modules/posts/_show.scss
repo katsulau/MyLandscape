@@ -54,6 +54,14 @@
         background: #fff;
         padding: 20px;
         border: solid thin rgb(200, 200, 200);
+        .favorite {
+          display: flex;
+          padding-bottom: 10px;
+          #good {
+            margin: 0;
+            padding: 0 5px;
+          }
+        }
       }
       .comments {
         border: solid thin rgb(200, 200, 200);
