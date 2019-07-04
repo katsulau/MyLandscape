@@ -40,6 +40,12 @@
             display: block;
             color: rgb(190, 190, 190);
           }
+          #defaultImage {
+            width: 300px;
+            height: 250px;
+            position: absolute;
+            border-radius: 5px;
+          }
         }
       }
       .action {
