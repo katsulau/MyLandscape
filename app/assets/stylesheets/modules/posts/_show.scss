@@ -54,6 +54,23 @@
         background: #fff;
         padding: 20px;
         border: solid thin rgb(200, 200, 200);
+        .favorite {
+          display: flex;
+          padding-bottom: 10px;
+          .good-btn{
+            cursor: pointer;
+            background: #fff;
+            border: none;
+            .fa-heart {
+              color: red;
+            }
+          }
+          .good-btn:focus { outline:0; }
+          #good-text {
+            margin: 0;
+            padding: 0 5px;
+          }
+        }
       }
       .comments {
         border: solid thin rgb(200, 200, 200);
