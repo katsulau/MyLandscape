@@ -17,8 +17,8 @@
         = image_tag @post.image.to_s
       .description
         .favorite
-          %i.far.fa-heart.fa-lg
-          %p#good いいね
+          %i.far.fa-heart.fa-lg#good-btn
+          %p#good-text いいね
         = @post.description
       .comments
         .comments__heading
