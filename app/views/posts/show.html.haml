@@ -17,8 +17,16 @@
         = image_tag @post.image.to_s
       .description
         .favorite
-          %i.far.fa-heart.fa-lg#good-btn
-          %p#good-text いいね
+          - if current_user.already_liked?(@post)
+            = button_to post_favorite_path(@post), class: "good-btn", method: :delete do
+              %i.fas.fa-heart.fa-lg
+            %p#good-text いいね
+            = @post.favorites.count
+          - else
+            = button_to post_favorites_path(@post), class: "good-btn" do
+              %i.far.fa-heart.fa-lg
+            %p#good-text いいね
+            = @post.favorites.count
         = @post.description
       .comments
         .comments__heading
