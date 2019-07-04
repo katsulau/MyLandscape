@@ -3,16 +3,14 @@
     %h5
       %i.fas.fa-award
       お気に入りランキング
-  %span.fa-stack.fa-lg
-    %span.fas.fa-trophy.fa-stack-2x
-    %span.fa.fa-stack-1x 1
-  .post
-  %span.fa-stack.fa-lg
-    %span.fas.fa-star.fa-stack-2x
-    %span.fa.fa-stack-1x 2
-  .post
-
-  %span.fa-stack.fa-lg
-    %span.fas.fa-star.fa-stack-2x
-    %span.fa.fa-stack-1x 3
-  .post
+  - @ranking.each_with_index do |post, i|
+    %span.fa-stack.fa-lg
+      - if i == 0
+        %span.fas.fa-trophy.fa-stack-2x
+        %span.fa.fa-stack-1x= i + 1
+      - else
+        %span.fas.fa-star.fa-stack-2x
+        %span.fa.fa-stack-1x= i + 1
+    =link_to post_path(post) do
+      .post
+        = image_tag post.image.to_s
