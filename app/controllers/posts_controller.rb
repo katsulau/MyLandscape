@@ -30,6 +30,8 @@ class PostsController < ApplicationController
   def show
     @wiki = Wikipedia.find(@post.name)
     @comments = @post.comments.includes(:user)
+    posts_ids = Favorite.group(:post_id).order('count_post_id desc').limit(5).count(:post_id).keys
+    @ranking = posts_ids.map{ |id| Post.find(id) }
   end
 
   private
