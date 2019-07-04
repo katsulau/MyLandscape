@@ -57,8 +57,13 @@
         .favorite {
           display: flex;
           padding-bottom: 10px;
-          #good-btn{
+          .good-btn{
             cursor: pointer;
+            background: #fff;
+            border: none;
+            .fa-heart {
+              color: red;
+            }
           }
           #good-text {
             margin: 0;
