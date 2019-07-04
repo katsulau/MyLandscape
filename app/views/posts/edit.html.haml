@@ -3,7 +3,7 @@
     .card-header
       投稿編集
     .card-body
-      = form_with url: posts_path do |f|
+      = form_with(model: @post, local: true) do |f|
         .field
           %label 場所の名前
           %span 必須
@@ -15,10 +15,12 @@
           = f.file_field :image, style:"display:none;", id: "file"
           .preview{ onClick: "$('#file').click()"}
             %i.far.fa-image.fa-5x
+            - if @post.image.present?
+              = image_tag @post.image.to_s, id: "defaultImage"
         .field
           %label 説明文
           %span.arbitrary 任意
-          = f.text_area :name, class: "form-control"
+          = f.text_area :description, class: "form-control"
 
         .action
           = f.submit "変更する", class: "btn btn-primary"
