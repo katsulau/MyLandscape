@@ -7,8 +7,10 @@
     .carousel-inner
       %p.title MyLandscape
       %p.introduction とっておきの景色を見つけよう
-      %p.login
-        %a.btn{:href => "#", :role => "button"} かんたんログインする »
+      = form_for(resource, as: resource_name, url: session_path(resource_name), class: "login") do |f|
+        = f.email_field :email, value: "test@mail.com", class: "email-field"
+        = f.password_field :password, value: "test123", class: "password-field"
+        = f.submit "かんたんログインする »", class: "btn", role: "button"
       .carousel-item.active
         = image_tag('first-slide.jpg', class: "d-block w-100", alt: "First slide")
       .carousel-item
@@ -41,14 +43,16 @@
       %p
         -# %a.btn.btn-secondary{:href => "#", :role => "button"} View details »
     .col-lg-4
-      %i.fas.fa-star.fa-5x
+      -# %i.fas.fa-star.fa-5x
+      %i.fas.fa-mountains
       %h2 お気に入り登録
       %p 好きな景色はお気に入りに登録できます。
-      %p
-        -# %a.btn.btn-secondary{:href => "#", :role => "button"} View details »
   .buttons
     %p
-      %a.btn.easy-login{:href => "#", :role => "button"} かんたんログインする »
+      = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
+        = f.email_field :email, value: "test@mail.com", class: "email-field"
+        = f.password_field :password, value: "test123", class: "password-field"
+        = f.submit "かんたんログインする »", class: "btn easy-login", role: "button"
     %p.registration
       = link_to "新規登録する »", new_user_registration_path, class: "btn register", role: "button"
     %p.login
