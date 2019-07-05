@@ -54,6 +54,12 @@
         background: #fff;
         padding: 20px;
         border: solid thin rgb(200, 200, 200);
+        .edit {
+          text-align: center;
+          .btn {
+            width: 250px;
+          }
+        }
         .favorite {
           display: flex;
           padding-bottom: 10px;
