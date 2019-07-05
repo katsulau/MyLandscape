@@ -24,6 +24,25 @@
   }
   .nav-item {
     margin: 10px;
+    .profile {
+      &__defaultImage {
+        border: solid thin rgb(200, 200, 200);
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+        text-align: center;
+        line-height: 45px;
+        color: #fff;
+      }
+      &__image {
+        border: solid thin rgb(200, 200, 200);
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+        text-align: center;
+        line-height: 45px;
+      }
+    }
     .btn {
       color: #fff;
       border-color: #6c757d;
@@ -33,6 +52,9 @@
     }
     .register {
       background-color: rgba(220, 20, 60, 0.7);
+    }
+    .post {
+      background-color: rgba(21, 175, 98, 0.7);
     }
     .login {
       background-color: rgba(220, 167, 20, 0.7);
