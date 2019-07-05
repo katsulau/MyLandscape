@@ -1,10 +1,21 @@
 %nav.navbar.navbar-expand-lg.navbar-dark{style: "background-color: rgb(0, 0, 0);"}
+  .mountain
+    .mountain1
   = link_to "MyLandscape", root_path, class: "navbar-brand"
   .navbar-collapse.collapse.w-100.order-3.dual-collapse2
     %ul.navbar-nav.ml-auto
       - if user_signed_in?
         %li.nav-item
-          = link_to "投稿一覧", posts_path, class: "nav-link"
+          = link_to "投稿する", new_post_path, class: "btn post", role: "button"
+        %li.nav-item
+          = link_to "全投稿一覧", posts_path, class: "nav-link"
+        %li.nav-item
+          .profile
+            - if current_user.image.blank?
+              .profile__defaultImage
+                %i.fas.fa-user-alt.fa-lg
+            - else
+              = image_tag current_user.image.to_s, class: "profile__image"
         %li.nav-item.dropdown
           %a#navbarDropdown.nav-link.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
             マイページ

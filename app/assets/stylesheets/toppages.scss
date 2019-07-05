@@ -9,9 +9,10 @@
       width: 100%;
       text-align: center;
       z-index: 1;
-      font-family: Brush Script MT;
+      font-family:  cursive, brush Script MT;
       font-size: 80px;
-      transform: rotate(346deg);
+      transform: rotate(355deg);
+      font-style: italic;
       font-weight: bold;
     }
     .introduction {
@@ -24,7 +25,7 @@
       font-size: 20px;
       font-weight: bold;
     }
-    .login {
+    .new_user {
       position: absolute;
       color: white;
       top: 80vh;
@@ -32,6 +33,12 @@
       text-align: center;
       z-index: 1;
       font-weight: bold;
+      .email-field {
+        display: none;
+      }
+      .password-field {
+        display: none;
+      }
       .btn {
         color: #fff;
         border-color: #6c757d;
@@ -91,6 +98,25 @@
       .login {
         background-color: rgba(220, 167, 20, 0.5);
       }
+    }
+    .email-field {
+      display: none;
+    }
+    .password-field {
+      display: none;
+    }
+    .btn {
+      font-weight: bold;
+      color: #fff;
+      border-color: #6c757d;
+      width: 250px;
+      margin: 5px 0;
+    }
+    .btn:hover {
+      opacity: 0.7;
+    }
+    .easy-login {
+      background-color: rgba(220, 20, 60, 0.5);
     }
   }
 }

@@ -16,8 +16,11 @@
       .postImage
         = image_tag @post.image.to_s
       .description
+        - if current_user == @post.user
+          .edit
+            = link_to "編集する", edit_post_path, class: "btn btn-primary", role: "button"
         .favorite
-          - if current_user.already_liked?(@post)
+          - if current_user && current_user.already_liked?(@post)
             = button_to post_favorite_path(@post), class: "good-btn", method: :delete do
               %i.fas.fa-heart.fa-lg
             %p#good-text いいね
