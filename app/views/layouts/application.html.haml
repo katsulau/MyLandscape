@@ -11,5 +11,6 @@
     %script{:async => "", :defer => "defer", :src => ENV['GOOGLEMAP_API_KEY']}
   %body
     = render "layouts/header"
+    = render 'layouts/flash'
     = yield
     = render 'layouts/footer'

@@ -92,3 +92,4 @@ gem "rake"
 gem 'devise'
 gem 'wikipedia-client'
 gem 'kaminari'
+gem 'devise-i18n'
