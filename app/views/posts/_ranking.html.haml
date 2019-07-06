@@ -2,7 +2,7 @@
   .title
     %h5
       %i.fas.fa-award
-      お気に入りランキング
+      = t('post.ranking')
   - @ranking.each_with_index do |post, i|
     %span.fa-stack.fa-lg
       - if i == 0
