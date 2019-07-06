@@ -253,3 +253,10 @@ en:
     send_comment: Send
     wiki_info: Wikipedia Information
     wiki_detail: Show more detail
+    edit_post: Edit Post Page
+    place_name: Location Name
+    image: Post Image
+    description: Description
+    change: Change
+    required: required
+    arbitrary: arbitrary

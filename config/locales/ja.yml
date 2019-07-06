@@ -245,3 +245,10 @@ ja:
     send_comment: 送信する
     wiki_info: Wikipedia情報
     wiki_detail: 詳しい詳細はこちら
+    edit_post: 投稿編集
+    place_name: 場所の名前
+    image: 投稿画像
+    description: 説明文
+    change: 変更する
+    required: 必須
+    arbitrary: 任意
