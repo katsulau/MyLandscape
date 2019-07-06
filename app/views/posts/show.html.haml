@@ -18,32 +18,32 @@
       .description
         - if current_user == @post.user
           .edit
-            = link_to "編集する", edit_post_path, class: "btn btn-primary", role: "button", data: {"turbolinks"=>false}
+            = link_to t('post.edit'), edit_post_path, class: "btn btn-primary", role: "button", data: {"turbolinks"=>false}
         .favorite
           = render partial: 'favorites/favorite', locals: {post: @post}
         = @post.description
       .comments
         .comments__heading
           %i.fas.fa-comment
-            コメント
+            = t('post.comment_title')
           - unless current_user
-            = link_to "ログインしてコメントする", user_session_path, role: "button", class: "btn"
+            = link_to t('post.login_comment'), user_session_path, role: "button", class: "btn"
           - if current_user
             .comment-input
               = form_with( url: post_comments_path(post_id: params[:id]), local: true, class: "new-message" ) do |f|
                 .field
-                = f.text_area :text, class: "form-control", id: "message-box", placeholder: "コメントする", rows: "3"
+                = f.text_area :text, class: "form-control", id: "message-box", placeholder: t('post.comment_do'), rows: "3"
                 .action
-                = f.submit "送信する", class: "btn btn-primary"
+                = f.submit t('post.send_comment'), class: "btn btn-primary"
         .comments__content
           = render 'comment'
       .wikipedia
         %h5
           %i.fab.fa-wikipedia-w.fa-2x
-          Wikipedia情報
+          = t('post.wiki_info')
         .info
           = @wiki.summary
-          = link_to "詳しい説明はこちら", @wiki.fullurl, target: :_blank
+          = link_to t('post.wiki_detail'), @wiki.fullurl, target: :_blank
       .googleMap
         #map_container
           #map_canvas
