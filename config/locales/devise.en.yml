@@ -72,3 +72,4 @@ en:
     log_in_btn: Log in
     fogot_password: Fogot your password?
     password_instructions: Send me reset password instructions
+    minimum_caracter: (6 characters minimum)

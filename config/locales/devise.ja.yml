@@ -66,3 +66,4 @@ ja:
     log_in_btn: ログインする
     fogot_password: パスワードを忘れた方
     password_instructions: パスワード再設定を送信する
+    minimum_caracter: (最小6文字)
