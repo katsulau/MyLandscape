@@ -26,9 +26,8 @@
           %a#navbarDropdown.nav-link.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
             Language
           .dropdown-menu{"aria-labelledby" => "navbarDropdown"}
-            %a.dropdown-item{:href => "#"} 日本語
-            %a.dropdown-item{:href => "#"} English
-            %a.dropdown-item{:href => "#"} Espanyol
+            %a.dropdown-item{:href => "/ja"} 日本語
+            %a.dropdown-item{:href => "/en"} English
       - else
         %li.nav-item
           = link_to "新規登録", new_user_registration_path, class: "btn register", role: "button"
@@ -40,6 +39,5 @@
           %a#navbarDropdown.nav-link.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
             Language
           .dropdown-menu{"aria-labelledby" => "navbarDropdown"}
-            %a.dropdown-item{:href => "#"} 日本語
-            %a.dropdown-item{:href => "#"} English
-            %a.dropdown-item{:href => "#"} Espanyol
+            %a.dropdown-item{:href => "/ja"} 日本語
+            %a.dropdown-item{:href => "/en"} English
