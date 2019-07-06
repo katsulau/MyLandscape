@@ -213,3 +213,25 @@ en:
       long: "%B %d, %Y %H:%M"
       short: "%d %b %H:%M"
     pm: pm
+  header:
+    sign_up: Sign up
+    log_in: Log in
+    log_out: Log out
+    post_list: Post list
+    mypage: MyPage
+    language: Language
+    post: Post
+  top:
+    catchphrase: Find your favorite scenery
+    what_is: What is MyLandscape?
+    desc1: This is a website where you can register your favorite scenery and view it.
+    desc2: You can register your favorite images and view them anytime.
+    map_title: Link with map
+    map_desc: You can see the map of the posted location
+    comment_title: Put your comment
+    comment_desc: You can put your comment as you like
+    favorite_title: Register your favorite
+    favorite_desc: You can register your favorite post
+    easy_log_in: Log in Test user >>
+    sign_up: Sign up >>
+    log_in: Log in >>

@@ -205,3 +205,25 @@ ja:
       long: "%Y/%m/%d %H:%M"
       short: "%m/%d %H:%M"
     pm: 午後
+  header:
+    sign_up: 登録
+    log_in: ログイン
+    log_out: ログアウト
+    post_list: 全投稿一覧
+    mypage: マイページ
+    language: 言語選択
+    post: 投稿する
+  top:
+    catchphrase: とっておきの景色を見つけよう
+    what_is: MyLandscapeとは？
+    desc1: あなたの好きな景色を登録して、見ることのできるサイトです。
+    desc2: 気に入った画像はお気に入りに登録していつでも見ることができます。
+    map_title: マップと連携
+    map_desc: 登録された景色のある場所が地図で分かります。
+    comment_title: コメント機能
+    comment_desc: 自由にコメントをすることができます。
+    favorite_title: お気に入り登録
+    favorite_desc: 好きな景色はお気に入りに登録できます。
+    easy_log_in: かんたんログインする >>
+    sign_up: 新規登録する >>
+    log_in: ログインする >>
