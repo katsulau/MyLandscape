@@ -1,10 +1,11 @@
 .edit_wrapper
   .fields
-    %h2 ユーザー編集画面
+    %h2= t("user.edit_title")
     = form_with(model: @user, local: true) do |f|
       .field
         .field__name
-          = f.label :image
+          %label
+            = t("user.image")
         .field__box
           = f.file_field :image, style:"display:none;", id: "file"
           .preview{ onClick: "$('#file').click()" }
@@ -13,9 +14,10 @@
               = image_tag @user.image.to_s
       .field
         .field__name
-          = f.label :name
+          %label
+            = t("user.name")
         .field__box
           = f.text_field :name, autofocus: true, autocomplete: "name", class: "form-control"
       .actions
-        = f.submit "Update", class: "btn btn-primary"
-      = link_to "Back", user_path(@user), class: "btn btn-primary"
+        = f.submit t("user.update"), class: "btn btn-primary"
+      = link_to t("user.back"), user_path(@user), class: "btn btn-primary"
