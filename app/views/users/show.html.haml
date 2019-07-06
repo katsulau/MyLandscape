@@ -11,7 +11,7 @@
         .profile__info--username
           = @user.name
         = link_to edit_user_path(@user), data: {"turbolinks"=>false} do
-          %button.btn.btn-secondary{:type => "button"} プロフィールを編集
+          %button.btn.btn-secondary{:type => "button"}= t("mypage.edit_profile")
     .posts
       - @posts.each do |post|
         = link_to post_path(post), data: {"turbolinks"=>false} do
