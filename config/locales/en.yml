@@ -243,3 +243,13 @@ en:
     image: Image
     update: Update
     back: Back
+  post:
+    ranking: Favorite Ranking
+    favorite: Favorite
+    comment_title: comment
+    login_comment: Log in for comment
+    comment_do: put your comment
+    edit: Edit Your Post
+    send_comment: Send
+    wiki_info: Wikipedia Information
+    wiki_detail: Show more detail

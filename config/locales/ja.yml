@@ -235,3 +235,13 @@ ja:
     image: プロフィール画像
     update: 更新する
     back: 戻る
+  post:
+    ranking: お気に入りランキング
+    favorite: お気に入り
+    comment_title: コメント
+    login_comment: ログインしてコメントする
+    comment_do: コメントする
+    edit: 編集する
+    send_comment: 送信する
+    wiki_info: Wikipedia情報
+    wiki_detail: 詳しい詳細はこちら
