@@ -227,3 +227,11 @@ ja:
     easy_log_in: かんたんログインする >>
     sign_up: 新規登録する >>
     log_in: ログインする >>
+  mypage:
+    edit_profile: プロフィールを編集
+  user:
+    edit_title: ユーザー編集画面
+    name: ユーザーネーム
+    image: プロフィール画像
+    update: 更新する
+    back: 戻る

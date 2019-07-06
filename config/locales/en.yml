@@ -235,3 +235,11 @@ en:
     easy_log_in: Log in Test user >>
     sign_up: Sign up >>
     log_in: Log in >>
+  mypage:
+    edit_profile: Edit my profile
+  user:
+    edit_title: User Edit
+    name: Name
+    image: Image
+    update: Update
+    back: Back
