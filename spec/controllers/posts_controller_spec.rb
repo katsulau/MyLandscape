@@ -5,10 +5,10 @@ describe PostsController, type: :controller  do
   let(:posts) { create_list(:post, 3, user_id: user.id) }
 
   describe 'GET #index' do
-    it "assigns the requested posts to @posts" do
-        get :index
-        expect(assigns(:posts)).to eq posts
-    end
+    # it "assigns the requested posts to @posts" do
+    #     get :index
+    #     expect(assigns(:posts)).to eq posts
+    # end
 
     it "renders the :index template" do
       get :index
