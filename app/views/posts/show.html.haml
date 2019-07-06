@@ -18,7 +18,7 @@
       .description
         - if current_user == @post.user
           .edit
-            = link_to "編集する", edit_post_path, class: "btn btn-primary", role: "button"
+            = link_to "編集する", edit_post_path, class: "btn btn-primary", role: "button", data: {"turbolinks"=>false}
         .favorite
           = render partial: 'favorites/favorite', locals: {post: @post}
         = @post.description

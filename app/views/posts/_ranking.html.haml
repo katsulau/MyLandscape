@@ -11,6 +11,6 @@
       - else
         %span.fas.fa-star.fa-stack-2x
         %span.fa.fa-stack-1x= i + 1
-    =link_to post_path(post) do
+    =link_to post_path(post), data: {"turbolinks"=>false} do
       .post
         = image_tag post.image.to_s

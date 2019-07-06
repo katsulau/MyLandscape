@@ -6,7 +6,7 @@
     %ul.navbar-nav.ml-auto
       - if user_signed_in?
         %li.nav-item
-          = link_to "投稿する", new_post_path, class: "btn post", role: "button"
+          = link_to "投稿する", new_post_path, class: "btn post", role: "button", data: {"turbolinks"=>false}
         %li.nav-item
           = link_to "全投稿一覧", posts_path, class: "nav-link"
         %li.nav-item
