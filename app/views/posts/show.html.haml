@@ -20,16 +20,7 @@
           .edit
             = link_to "編集する", edit_post_path, class: "btn btn-primary", role: "button"
         .favorite
-          - if current_user && current_user.already_liked?(@post)
-            = button_to post_favorite_path(@post), class: "good-btn", method: :delete do
-              %i.fas.fa-heart.fa-lg
-            %p#good-text いいね
-            = @post.favorites.count
-          - else
-            = button_to post_favorites_path(@post), class: "good-btn" do
-              %i.far.fa-heart.fa-lg
-            %p#good-text いいね
-            = @post.favorites.count
+          = render partial: 'favorites/favorite', locals: {post: @post}
         = @post.description
       .comments
         .comments__heading
