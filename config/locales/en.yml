@@ -237,6 +237,8 @@ en:
     log_in: Log in >>
   mypage:
     edit_profile: Edit my profile
+    myposts_btn: My posts list
+    favorites_btn: My fovorites list
   user:
     edit_title: User Edit
     name: Name
