@@ -31,7 +31,7 @@
             %a.dropdown-item{:href => "/es"} Español
       - else
         %li.nav-item
-          = link_to t("header.sign_up"), new_user_registration_path, class: "btn register", role: "button"
+          = link_to t("header.sign_up"), new_user_registration_path, class: "btn register", role: "button", data: {"turbolinks"=>false}
         %li.nav-item
           = link_to t("header.log_in"), user_session_path, class: "btn login", role: "button"
         %li.nav-item
