@@ -14,7 +14,9 @@
           %label
             = t("label.image")
         .field__box
-          = f.file_field :image
+          = f.file_field :image, style:"display:none;", id: "file"
+          .preview{ onClick: "$('#file').click()" }
+            %i.fas.fa-plus
       .field
         .field__name
           = f.label :email
@@ -34,5 +36,5 @@
         .field__box
           = f.password_field :password_confirmation, autocomplete: "new-password", class: "form-control"
       .actions
-        = f.submit t("label.sign_up"), class: "btn btn-primary"
+        = f.submit t("label.sign_up_btn"), class: "btn btn-primary"
     = render "devise/shared/links"
