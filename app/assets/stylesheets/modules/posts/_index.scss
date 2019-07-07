@@ -4,7 +4,7 @@
 
 .posts-index-wrapper{
   background: $background-color;
-  padding-bottom: 10vh;
+  height: 130vh;
   .contents {
     .posts {
       @include clearfix();
