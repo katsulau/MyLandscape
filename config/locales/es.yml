@@ -228,14 +228,14 @@ es:
   top:
     catchphrase: Encuentra su paisaje favorito
     what_is: ¿Qué es MyLandscape?
-    desc1: Es una página web donde se puede registrar su paisaje favorito y verlo.
-    desc2: Se puede registrar su paisaje faborito y verlo cuando quiera.
+    desc1: Es una página web donde se puede publicar los paisajes y verlos.
+    desc2: Se puede registrar su paisaje favorito y verlo cuando quiera.
     map_title: Conectar con mapa
     map_desc: se puede ver la mapa del sitio donde se han publicado
     comment_title: Poner comentario
-    comment_desc: Se puede comentar en artículo como quiera
+    comment_desc: Se puede comentar en artículos como quiera
     favorite_title: Registrar su favorito
-    favorite_desc: Se puede registrar su artículos favoritos
+    favorite_desc: Se puede registrar sus artículos favoritos
     easy_log_in: Empezar con usuario de prueba >>
     sign_up: Registrarse >>
     log_in: Iniciar Sesión >>
