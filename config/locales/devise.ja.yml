@@ -61,7 +61,7 @@ ja:
     sign_up: 新規登録
     log_in: ログイン
     name: 名前
-    image: プロフィール画像(任意)
+    image: プロフィール画像
     sign_up_btn: 登録する
     log_in_btn: ログインする
     fogot_password: パスワードを忘れた方
