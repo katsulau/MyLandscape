@@ -6,11 +6,11 @@
       %li{"data-slide-to" => "2", "data-target" => "#carousel-2"}
     .carousel-inner
       %p.title MyLandscape
-      %p.introduction とっておきの景色を見つけよう
+      %p.introduction= t("top.catchphrase")
       = form_for(resource, as: resource_name, url: session_path(resource_name), class: "login") do |f|
         = f.email_field :email, value: "test@mail.com", class: "email-field"
         = f.password_field :password, value: "test123", class: "password-field"
-        = f.submit "かんたんログインする »", class: "btn", role: "button"
+        = f.submit t("top.easy_log_in"), class: "btn", role: "button"
       .carousel-item.active
         = image_tag('first-slide.jpg', class: "d-block w-100", alt: "First slide")
       .carousel-item
@@ -26,29 +26,30 @@
 
   .about
     .about__inner
-      %p.about__inner--title MyLandscapeとは？
-      %p.about__inner--description あなたの好きな景色を登録して、見ることのできるサイトです。<br>気に入った画像はお気に入りに登録していつでも見ることができます。
+      %p.about__inner--title= t("top.what_is")
+      %p.about__inner--description= t("top.desc1")
+      = t("top.desc2")
 
   .row
     .col-lg-4
       %i.fas.fa-map-marked-alt.fa-5x
-      %h2 マップと連携
-      %p 登録された景色のある場所が地図で分かります。
+      %h2= t("top.map_title")
+      %p= t("top.map_desc")
     .col-lg-4
       %i.fas.fa-comments.fa-5x
-      %h2 コメント機能
-      %p 自由にコメントをすることができます。
+      %h2= t("top.comment_title")
+      %p= t("top.comment_desc")
     .col-lg-4
       %i.fas.fa-star.fa-5x
-      %h2 お気に入り登録
-      %p 好きな景色はお気に入りに登録できます。
+      %h2= t("top.favorite_title")
+      %p= t("top.favorite_desc")
   .buttons
     %p
       = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
         = f.email_field :email, value: "test@mail.com", class: "email-field"
         = f.password_field :password, value: "test123", class: "password-field"
-        = f.submit "かんたんログインする »", class: "btn easy-login", role: "button"
+        = f.submit t("top.easy_log_in"), class: "btn easy-login", role: "button"
     %p.registration
-      = link_to "新規登録する »", new_user_registration_path, class: "btn register", role: "button"
+      = link_to t("top.sign_up"), new_user_registration_path, class: "btn register", role: "button"
     %p.login
-      = link_to "ログインする »", user_session_path, class: "btn login", role: "button"
+      = link_to t("top.log_in"), user_session_path, class: "btn login", role: "button"

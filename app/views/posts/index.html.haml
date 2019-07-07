@@ -2,6 +2,6 @@
   .contents
     .posts.clearfix
       - @posts.each do |post|
-        = link_to "/posts/#{post.id}", data: {"turbolinks"=>false} do
+        =link_to post_path(post), data: {"turbolinks"=>false} do
           = image_tag post.image.to_s, class: "post"
     = paginate @posts

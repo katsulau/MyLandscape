@@ -5,6 +5,10 @@ RSpec.describe Comment, type: :model do
   let(:another_user) {create(:user) }
   let(:post) { create(:post, user_id: user.id) }
 
+  before do
+    I18n.locale = :en
+  end
+
   describe "#create" do
     it "is valid with text" do
       comment = build(:comment, user_id: user.id, post_id: post.id)

@@ -57,3 +57,13 @@ ja:
       not_saved:
         one: "エラーにより、この %{resource} を保存できません："
         other: "%{count} 個のエラーにより、この %{resource} を保存できません："
+  label:
+    sign_up: 登録する
+    log_in: ログインする
+    name: 名前
+    image: プロフィール画像(任意)
+    sign_up_btn: 登録する
+    log_in_btn: ログインする
+    fogot_password: パスワードを忘れた方
+    password_instructions: パスワード再設定を送信する
+    minimum_caracter: (最小6文字)

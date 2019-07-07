@@ -1,6 +1,6 @@
 .registration_wrapper
   .fields
-    %h2 Forgot your password?
+    %h2= t("label.fogot_password")
     = form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f|
       = render "devise/shared/error_messages", resource: resource
       .field
@@ -9,5 +9,5 @@
         .field__box
           = f.email_field :email, autofocus: true, autocomplete: "email", class: "form-control"
       .actions
-        = f.submit "Send me reset password instructions", class: "btn btn-primary"
+        = f.submit t("label.password_instructions"), class: "btn btn-primary"
     = render "devise/shared/links"

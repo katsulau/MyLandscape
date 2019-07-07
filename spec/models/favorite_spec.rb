@@ -5,6 +5,10 @@ RSpec.describe Favorite, type: :model do
   let(:user) { create(:user) }
   let(:post) { create(:post, user_id: user.id) }
 
+  before do
+    I18n.locale = :en
+  end
+
   describe "#create" do
     it "is valid with user_id and post_id" do
       favorite = Favorite.create(user_id: user.id, post_id: post.id)

@@ -1,10 +1,10 @@
 - if current_user && current_user.already_liked?(post)
   = button_to post_favorite_path(post, id: post.id ), class: "good-btn", method: :delete, remote: :true do
     %i.fas.fa-heart.fa-lg
-  %p#good-text いいね
+  %p#good-text= t('post.favorite')
   = post.favorites.count
 - else
   = button_to post_favorites_path(post), class: "good-btn", remote: :true do
     %i.far.fa-heart.fa-lg
-  %p#good-text いいね
+  %p#good-text= t('post.favorite')
   = post.favorites.count
