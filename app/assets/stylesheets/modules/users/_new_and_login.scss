@@ -23,6 +23,17 @@
         font-weight: bold;
         text-align: left;
       }
+      span {
+        background-color: rgb(234, 53, 45);
+        color: #fff;
+        font-size: 12px;
+        margin: 0 0 0 8px;
+        padding: 2px 4px;
+        border-radius: 2px;
+      }
+      .arbitrary {
+        background-color: rgb(160, 160, 160);
+      }
       .preview {
         display: flex;
         justify-content: center;
