@@ -3,7 +3,7 @@
 .registration_wrapper {
   background: $background-color;
   text-align: center;
-  height: 100vh;
+  height: 130vh;
   padding-top: 100px;
   .fields {
     background: #FFF;
@@ -18,9 +18,30 @@
       font-size: 20px;
     }
     .field {
+      padding: 10px 0;
       &__name{
         font-weight: bold;
         text-align: left;
+      }
+      .preview {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: solid 1px #CED4DA;
+        position: relative;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 100px;
+        height: 100px;
+        background-position: center;
+        background-color: #fff;
+        position: relative;
+        img {
+          width: 100px;
+          height: 100px;
+          position: absolute;
+          border-radius: 5px;
+        }
       }
     }
     .actions {
