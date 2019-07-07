@@ -1,6 +1,10 @@
 require 'rails_helper'
 
 describe Post do
+  before do
+    I18n.locale = :en
+  end
+
   describe "#create" do
     before do
       @user = create(:user)
