@@ -229,6 +229,8 @@ ja:
     log_in: ログインする >>
   mypage:
     edit_profile: プロフィールを編集
+    myposts_btn: 投稿した画像一覧
+    favorites_btn: お気に入り一覧
   user:
     edit_title: ユーザー編集画面
     name: ユーザーネーム

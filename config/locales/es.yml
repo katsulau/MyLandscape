@@ -241,6 +241,8 @@ es:
     log_in: Iniciar Sesión >>
   mypage:
     edit_profile: Editar mi perfil
+    myposts_btn: Lista de mis artículos
+    favorites_btn: Lista de favoritos
   user:
     edit_title: Editar usuario
     name: Nombre
