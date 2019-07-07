@@ -7,6 +7,7 @@ class UsersController < ApplicationController
 
   def show
     @posts = @user.posts.page(params[:page]).per(6)
+    @favorites = @user.favorite_posts.page(params[:page]).per(6)
   end
 
   def update
