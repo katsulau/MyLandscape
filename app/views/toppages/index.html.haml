@@ -50,6 +50,6 @@
         = f.password_field :password, value: "test123", class: "password-field"
         = f.submit t("top.easy_log_in"), class: "btn easy-login", role: "button"
     %p.registration
-      = link_to t("top.sign_up"), new_user_registration_path, class: "btn register", role: "button"
+      = link_to t("top.sign_up"), new_user_registration_path, class: "btn register", role: "button", data: {"turbolinks"=>false}
     %p.login
       = link_to t("top.log_in"), user_session_path, class: "btn login", role: "button"
