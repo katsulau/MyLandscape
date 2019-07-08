@@ -47,7 +47,7 @@ URL: http://my-landscape.com/
   
   
    - かんたんログイン  
-[![Image from Gyazo](https://i.gyazo.com/10f32bc44f6700f23cd59e23fcdeaaf1.gif)](https://gyazo.com/10f32bc44f6700f23cd59e23fcdeaaf1)
+  [![Image from Gyazo](https://i.gyazo.com/10f32bc44f6700f23cd59e23fcdeaaf1.gif)](https://gyazo.com/10f32bc44f6700f23cd59e23fcdeaaf1)
   
   
    - ユーザー編集     
