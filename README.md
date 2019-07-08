@@ -25,8 +25,7 @@ URL: http://my-landscape.com/
 
 - ユーザー登録、ログイン機能(devise)、ユーザー編集、かんたんログイン機能
   - ユーザー登録
-  ![demo](https://gyazo.com/34698a87acb5a88ba9ecbf582128784d)
-  ![34698a87acb5a88ba9ecbf582128784d](https://user-images.githubusercontent.com/48985869/60791539-d6abd180-a19e-11e9-9f09-ef34b1f012bb.gif)
+[![Image from Gyazo](https://i.gyazo.com/34698a87acb5a88ba9ecbf582128784d.gif)](https://gyazo.com/34698a87acb5a88ba9ecbf582128784d)
   - ログイン
   ![demo](https://gyazo.com/a56dd3ad8e9c60dd0c494c5faaaba244)
   - かんたんログイン
