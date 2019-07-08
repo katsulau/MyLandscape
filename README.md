@@ -47,10 +47,6 @@ URL: http://my-landscape.com/
   [![Image from Gyazo](https://i.gyazo.com/a56dd3ad8e9c60dd0c494c5faaaba244.gif)](https://gyazo.com/a56dd3ad8e9c60dd0c494c5faaaba244)  
   
   
-   - かんたんログイン  
-  [![Image from Gyazo](https://i.gyazo.com/10f32bc44f6700f23cd59e23fcdeaaf1.gif)](https://gyazo.com/10f32bc44f6700f23cd59e23fcdeaaf1)
-  
-  
    - ユーザー編集     
   [![Image from Gyazo](https://i.gyazo.com/6cf61d7c793436a390dbae036da003cc.gif)](https://gyazo.com/6cf61d7c793436a390dbae036da003cc) 
   
@@ -70,5 +66,3 @@ URL: http://my-landscape.com/
    - 多言語機能（日本語、英語、スペイン語で表示切り替えができる）  
   [![Image from Gyazo](https://i.gyazo.com/17ae7afe07bc43359ee6e135dd008f14.gif)](https://gyazo.com/17ae7afe07bc43359ee6e135dd008f14)
   
-  
-  [![Image from Gyazo](https://i.gyazo.com/10f32bc44f6700f23cd59e23fcdeaaf1.gif)](https://gyazo.com/10f32bc44f6700f23cd59e23fcdeaaf1)
