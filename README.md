@@ -36,7 +36,7 @@ URL: http://my-landscape.com/
 - 記事情報と連携したWikipedia情報の表示機能
 - 多言語機能（日本語、英語、スペイン語で表示切り替えができる）
 
-
+[![Image from Gyazo](https://i.gyazo.com/10f32bc44f6700f23cd59e23fcdeaaf1.gif)](https://gyazo.com/10f32bc44f6700f23cd59e23fcdeaaf1)
 ## キャプチャ画像
    - ユーザー登録  
   [![Image from Gyazo](https://i.gyazo.com/34698a87acb5a88ba9ecbf582128784d.gif)](https://gyazo.com/34698a87acb5a88ba9ecbf582128784d)   
