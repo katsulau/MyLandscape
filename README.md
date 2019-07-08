@@ -3,6 +3,9 @@
 ## MyLandscape
 観光地の風景写真を投稿できるサイトです。ポートフォリオとして作成しました。  
 URL: http://my-landscape.com/    
+
+
+
 ![toppage](https://user-images.githubusercontent.com/48985869/60789921-3b652d00-a19b-11e9-8cb5-3c1c1ac39974.jpg)
 
 
@@ -35,23 +38,33 @@ URL: http://my-landscape.com/
 
 
 ## キャプチャ画像
-
-    - ユーザー登録
+   - ユーザー登録  
   [![Image from Gyazo](https://i.gyazo.com/34698a87acb5a88ba9ecbf582128784d.gif)](https://gyazo.com/34698a87acb5a88ba9ecbf582128784d)   
-    - ログイン
+  
+  
+   - ログイン  
   [![Image from Gyazo](https://i.gyazo.com/a56dd3ad8e9c60dd0c494c5faaaba244.gif)](https://gyazo.com/a56dd3ad8e9c60dd0c494c5faaaba244)  
-    - かんたんログイン
-  [![Image from Gyazo](https://i.gyazo.com/10f32bc44f6700f23cd59e23fcdeaaf1.gif)](https://gyazo.com/10f32bc44f6700f23cd59e23fcdeaaf1)  
-    - ユーザー編集
-  [![Image from Gyazo](https://i.gyazo.com/6cf61d7c793436a390dbae036da003cc.gif)](https://gyazo.com/6cf61d7c793436a390dbae036da003cc)  
-
-    - 記事投稿
+  
+  
+   - かんたんログイン  
+[![Image from Gyazo](https://i.gyazo.com/10f32bc44f6700f23cd59e23fcdeaaf1.gif)](https://gyazo.com/10f32bc44f6700f23cd59e23fcdeaaf1)
+  
+  
+   - ユーザー編集     
+  [![Image from Gyazo](https://i.gyazo.com/6cf61d7c793436a390dbae036da003cc.gif)](https://gyazo.com/6cf61d7c793436a390dbae036da003cc) 
+  
+  
+   - 記事投稿  
   [![Image from Gyazo](https://i.gyazo.com/67d299181df264991fe49b487f6c1c7b.gif)](https://gyazo.com/67d299181df264991fe49b487f6c1c7b)  
-    - 記事編集
+  
+  
+   - 記事編集  
   [![Image from Gyazo](https://i.gyazo.com/b4cda037c2b334e5353c4ad4533cf551.gif)](https://gyazo.com/b4cda037c2b334e5353c4ad4533cf551)  
+  
 
-  - お気に入り機能
+   - お気に入り機能  
   [![Image from Gyazo](https://i.gyazo.com/83840bb3308e4fecd9ec5523930e1d45.gif)](https://gyazo.com/83840bb3308e4fecd9ec5523930e1d45)  
+  
 
-  - 多言語機能（日本語、英語、スペイン語で表示切り替えができる）
+   - 多言語機能（日本語、英語、スペイン語で表示切り替えができる）  
   [![Image from Gyazo](https://i.gyazo.com/17ae7afe07bc43359ee6e135dd008f14.gif)](https://gyazo.com/17ae7afe07bc43359ee6e135dd008f14)
