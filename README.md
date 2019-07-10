@@ -2,7 +2,7 @@
 
 ## MyLandscape
 観光地の風景写真を投稿できるサイトです。ポートフォリオとして作成しました。  
-URL: http://my-landscape.com/    
+URL: https://my-landscape.com/    
 
 
 
@@ -18,11 +18,15 @@ URL: http://my-landscape.com/
 - Javascript
 - Rspec
 - AWS
-  - EC2
+  - EC2/ALB
   - S3
   - Route53
   - ACM
+  - CloudFront
 - Circle CI
+
+
+
 
 ## 機能一覧
 
