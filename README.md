@@ -25,6 +25,18 @@ URL: https://my-landscape.com/
   - CloudFront
 - Circle CI
 
+## クラウドアーキテクチャー
+<img width="771" alt="スクリーンショット 2019-07-10 18 03 45" src="https://user-images.githubusercontent.com/48985869/60956129-23c5aa00-a33d-11e9-9c01-9613c1344332.png">
+
+
+capistranoを使ってec2インスタンスにデプロイをしています。
+現在はローカルのターミナルからcapistranoを使ってデプロイしていますが、
+Circle CIからデプロイを出来るよう構築する予定です。
+
+DNSにはRoute53を使用しており、ALBにSSL証明書をインストールすることでHTTPS通信を行えるよう設定しました。
+また、http通信は全てhttpsにリダイレクトするよう設定しています。
+
+画像保存にはS3を使用し、CloudFrontでCDN配信をしています。
 
 
 
