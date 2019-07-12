@@ -221,12 +221,12 @@ es:
     sign_up: Registrarse
     log_in: Iniciar sesión
     log_out: Cerrar sesión
-    post_list: lista de artículos
+    post_list: Lista de artículos
     mypage: Mi pagina
-    language: Lenguaje
+    language: Idioma
     post: Publicar
   top:
-    catchphrase: Encuentra su paisaje favorito
+    catchphrase: Encuentre su paisaje favorito
     what_is: ¿Qué es MyLandscape?
     desc1: Es una página web donde se puede publicar los paisajes y verlos.
     desc2: Se puede registrar su paisaje favorito y verlo cuando quiera.

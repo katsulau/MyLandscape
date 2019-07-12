@@ -69,9 +69,9 @@ es:
     sign_up: Registrarse
     log_in: Iniciar sesión
     name: Nombre
-    image: perfil imagen(opcional)
+    image: Imagen del perfil
     sign_up_btn: Registrarse
     log_in_btn: Iniciar sesión
     fogot_password: Se ha olividado su contraseña?
     password_instructions: Enviar las instrucciones de la contraseña
-    minimum_caracter: (6 carécteres como minimo)
+    minimum_caracter: (6 caracteres como minimo)
