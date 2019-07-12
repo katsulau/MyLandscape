@@ -67,7 +67,7 @@ en:
     sign_up: Sign up
     log_in: Log in
     name: name
-    image: profile image(arbitrary)
+    image: Profile image
     sign_up_btn: Sign up
     log_in_btn: Log in
     fogot_password: Fogot your password?
