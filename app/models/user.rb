@@ -12,6 +12,6 @@ class User < ApplicationRecord
   has_many :favorite_posts, through: :favorites, source: :post
 
   def already_liked?(post)
-    self.favorites.exists?(post_id: post.id)
+    favorites.exists?(post_id: post.id)
   end
 end

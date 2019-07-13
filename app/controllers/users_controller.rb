@@ -1,9 +1,7 @@
 class UsersController < ApplicationController
+  before_action :set_user, only: %i[edit show update]
 
-  before_action :set_user, only: [:edit, :show, :update]
-
-  def edit
-  end
+  def edit; end
 
   def show
     @posts = @user.posts.page(params[:page]).per(6)
@@ -11,8 +9,8 @@ class UsersController < ApplicationController
   end
 
   def update
-      @user.update(user_params)
-      redirect_to user_path(params[:id])
+    @user.update(user_params)
+    redirect_to user_path(params[:id])
   end
 
   private
