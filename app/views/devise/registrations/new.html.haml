@@ -4,7 +4,7 @@
     = form_for(resource, as: resource_name, url: session_path(resource_name), class: "login") do |f|
       = f.email_field :email, value: "test@mail.com", class: "email-field"
       = f.password_field :password, value: "test123", class: "password-field"
-      = f.submit "※登録せずにテストユーザーを使う場合はこちらをクリック", id: "easy-login", role: "button"
+      = f.submit t("label.easy-login"), id: "easy-login", role: "button"
     = form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
       = render "devise/shared/error_messages", resource: resource
       .field
