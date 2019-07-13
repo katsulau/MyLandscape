@@ -66,6 +66,7 @@ en:
   label:
     sign_up: Sign up
     log_in: Log in
+    easy-login: ※Pliase click here if you want to log in as test user.
     name: name
     image: Profile image
     sign_up_btn: Sign up

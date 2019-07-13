@@ -60,6 +60,7 @@ ja:
   label:
     sign_up: 新規登録
     log_in: ログイン
+    easy-login: ※登録せずにテストユーザーを使う場合はこちらをクリック
     name: 名前
     image: プロフィール画像
     sign_up_btn: 登録する
