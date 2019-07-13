@@ -37,10 +37,6 @@ jobs:
           name: Decode dotenv file
           command: echo $ENV_FILE | base64 --decode > .env
 
-      - run:
-          name: rubocop
-          command: bundle exec rubocop
-
       # Download and cache dependencies
       - restore_cache:
           keys:
@@ -63,6 +59,11 @@ jobs:
       # Database setup
       - run: bundle exec rake db:create
       - run: bundle exec rake db:schema:load
+
+      # run rubocop
+      - run:
+          name: rubocop
+          command: bundle exec rubocop
 
       # run tests!
       - run:
