@@ -86,7 +86,7 @@ jobs:
           destination: test-results
       - add_ssh_keys:
           fingerprints:
-            - 'd6:9c:d1:c8:df:af:42:2c:f4:d2:d4:d5:d6:83:a6:96'
+            - '48:b1:f7:c1:27:09:0c:53:ff:a8:cb:4b:48:d6:93:73'
       - deploy:
           name: Deploy via Capistrano
           command: |
