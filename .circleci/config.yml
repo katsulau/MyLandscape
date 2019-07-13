@@ -24,6 +24,9 @@ jobs:
 
     steps:
       - checkout
+      - run:
+          name: rubocop
+          command: bundle exec rubocop
 
       - run:
           name: setup bundler
