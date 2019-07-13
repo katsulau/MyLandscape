@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe PostsController, type: :controller  do
+describe PostsController, type: :controller do
   let(:user) { create(:user) }
   let(:posts) { create_list(:post, 3, user_id: user.id) }
 
@@ -29,9 +29,9 @@ describe PostsController, type: :controller  do
     end
 
     it "saves the new post in the database" do
-      expect {
+      expect do
         post :create, params: { user_id: user.id, post: attributes_for(:post) }
-      }.to change(Post, :count).by(1)
+      end.to change(Post, :count).by(1)
     end
 
     it "redirects to posts#index" do
@@ -59,7 +59,7 @@ describe PostsController, type: :controller  do
   end
 
   describe 'GET #edit' do
-    let(:post) { create(:post, user_id: user.id)}
+    let(:post) { create(:post, user_id: user.id) }
 
     it "assigns the requested post to @post" do
       get :edit, params: { id: post.id }
@@ -73,7 +73,7 @@ describe PostsController, type: :controller  do
   end
 
   describe 'PATCH #update' do
-    let(:post) { create(:post, user_id: user.id)}
+    let(:post) { create(:post, user_id: user.id) }
 
     before do
       login_user user
@@ -85,7 +85,7 @@ describe PostsController, type: :controller  do
     end
 
     it "changes @post's attributes" do
-      patch :update, params: {id: post.id, post: attributes_for(:post, name: 'abcde')}
+      patch :update, params: { id: post.id, post: attributes_for(:post, name: 'abcde') }
       post.reload
       expect(post.name).to eq("abcde")
     end

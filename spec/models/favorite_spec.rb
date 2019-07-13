@@ -1,7 +1,6 @@
 require 'rails_helper'
 
 RSpec.describe Favorite, type: :model do
-
   let(:user) { create(:user) }
   let(:post) { create(:post, user_id: user.id) }
 

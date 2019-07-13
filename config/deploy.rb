@@ -16,13 +16,12 @@ set :unicorn_pid, -> { "#{shared_path}/tmp/pids/unicorn.pid" }
 set :unicorn_config_path, -> { "#{current_path}/config/unicorn.rb" }
 set :keep_releases, 5
 
-set :default_env, {
-  rbenv_root: "/usr/local/rbenv",
-  path: "/usr/local/rbenv/shims:/usr/local/rbenv/bin:$PATH",
-  AWS_ACCESS_KEY_ID: ENV["AWS_ACCESS_KEY_ID"],
-  AWS_SECRET_ACCESS_KEY: ENV["AWS_SECRET_ACCESS_KEY"],
-  GOOGLEMAP_API_KEY: ENV["GOOGLEMAP_API_KEY"]
-}
+set :default_env,
+    rbenv_root: "/usr/local/rbenv",
+    path: "/usr/local/rbenv/shims:/usr/local/rbenv/bin:$PATH",
+    AWS_ACCESS_KEY_ID: ENV["AWS_ACCESS_KEY_ID"],
+    AWS_SECRET_ACCESS_KEY: ENV["AWS_SECRET_ACCESS_KEY"],
+    GOOGLEMAP_API_KEY: ENV["GOOGLEMAP_API_KEY"]
 
 after 'deploy:publishing', 'deploy:restart'
 namespace :deploy do
@@ -30,14 +29,12 @@ namespace :deploy do
     invoke 'unicorn:restart'
   end
 
-  set :linked_files, %w{ config/master.key }
+  set :linked_files, %w[config/master.key]
 
   desc 'upload master.key'
   task :upload do
-    on roles(:app) do |host|
-      if test "[ ! -d #{shared_path}/config ]"
-        execute "mkdir -p #{shared_path}/config"
-      end
+    on roles(:app) do |_host|
+      execute "mkdir -p #{shared_path}/config" if test "[ ! -d #{shared_path}/config ]"
       upload!('config/master.key', "#{shared_path}/config/master.key")
     end
   end

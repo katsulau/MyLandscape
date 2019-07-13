@@ -1,12 +1,10 @@
 require 'rails_helper'
 
 RSpec.describe UsersController, type: :controller do
-
   let(:user) { create(:user) }
   let(:posts) { create_list(:post, 3, user_id: user.id) }
 
   describe 'GET #show' do
-
     it "assigns the requested user to @user" do
       get :show, params: { id: user.id }
       expect(assigns(:user)).to eq user
@@ -42,7 +40,7 @@ RSpec.describe UsersController, type: :controller do
     end
 
     it "changes @user's attributes" do
-      patch :update, params: {id: user.id, user: attributes_for(:user, name: 'abc')}
+      patch :update, params: { id: user.id, user: attributes_for(:user, name: 'abc') }
       user.reload
       expect(user.name).to eq("abc")
     end
