@@ -68,6 +68,7 @@ es:
   label:
     sign_up: Registrarse
     log_in: Iniciar sesión
+    easy-login: ※Si quiere iniciar seción como usuario de prueba, pulse aquí.
     name: Nombre
     image: Imagen del perfil
     sign_up_btn: Registrarse
