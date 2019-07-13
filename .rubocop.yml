@@ -29,3 +29,15 @@ Metrics/LineLength:
 #'frozen_string_literal: true'を無効
 Style/FrozenStringLiteralComment:
   Enabled: false
+
+Metrics/AbcSize:
+  Enabled: true
+  Max: 18
+
+Metrics/BlockLength:
+  Exclude:
+    - 'spec/**/*'
+
+Style/ClassAndModuleChildren:
+  Exclude:
+    - 'test/test_helper.rb'
