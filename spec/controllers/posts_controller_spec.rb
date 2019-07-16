@@ -2,13 +2,13 @@ require 'rails_helper'
 
 describe PostsController, type: :controller do
   let(:user) { create(:user) }
-  let(:posts) { create_list(:post, 3, user_id: user.id) }
+  let(:posts) { create_list(:post, 5, user_id: user.id) }
 
   describe 'GET #index' do
-    # it "assigns the requested posts to @posts" do
-    #     get :index
-    #     expect(assigns(:posts)).to eq posts
-    # end
+    it "assigns the requested posts to @posts" do
+        get :index
+        expect(assigns(:posts)).to match(posts.sort{|a, b| b.created_at <=> a.created_at })
+    end
 
     it "renders the :index template" do
       get :index
