@@ -6,8 +6,8 @@ describe PostsController, type: :controller do
 
   describe 'GET #index' do
     it "assigns the requested posts to @posts" do
-        get :index
-        expect(assigns(:posts)).to match(posts.sort{|a, b| b.created_at <=> a.created_at })
+      get :index
+      expect(assigns(:posts)).to match(posts.sort { |a, b| b.created_at <=> a.created_at })
     end
 
     it "renders the :index template" do
