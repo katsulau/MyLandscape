@@ -74,6 +74,8 @@ group :test do
   gem 'chromedriver-helper'
   gem "shoulda-matchers"
   gem "rspec_junit_formatter"
+  gem 'launchy'
+  gem 'webdrivers'
 end
 
 group :production do

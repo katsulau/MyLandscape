@@ -41,3 +41,7 @@ Metrics/BlockLength:
 Style/ClassAndModuleChildren:
   Exclude:
     - 'test/test_helper.rb'
+
+Lint/Debugger:
+  Exclude:
+    - 'spec/rails_helper.rb'

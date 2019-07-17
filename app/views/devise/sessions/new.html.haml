@@ -17,9 +17,9 @@
           = f.check_box :remember_me
           = f.label :remember_me
       .actions
-        = f.submit t("label.log_in_btn"), class: "btn btn-primary"
+        = f.submit t("label.log_in_btn"), class: "btn btn-primary", id: "normal_login"
     = render "devise/shared/links"
     = form_for(resource, as: resource_name, url: session_path(resource_name), class: "login") do |f|
-      = f.email_field :email, value: "test@mail.com", class: "email-field"
-      = f.password_field :password, value: "test123", class: "password-field"
+      = f.email_field :email, value: "test@mail.com", class: "email-field", id: "easy_email"
+      = f.password_field :password, value: "test123", class: "password-field", id: "easy_password"
       = f.submit t("label.easy-login"), id: "easy-login", role: "button"

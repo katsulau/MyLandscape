@@ -8,6 +8,7 @@ require 'rspec/rails'
 require 'devise'
 require File.expand_path("spec/support/controller_macros.rb")
 require 'shoulda/matchers'
+require 'capybara/rspec'
 I18n.locale = :en
 # Add additional requires below this line. Rails is not loaded until this point!
 
@@ -24,7 +25,7 @@ I18n.locale = :en
 # directory. Alternatively, in the individual `*_spec.rb` files, manually
 # require only the support files necessary.
 #
-# Dir[Rails.root.join('spec', 'support', '**', '*.rb')].each { |f| require f }
+Dir[Rails.root.join('spec', 'support', '**', '*.rb')].each { |f| require f }
 
 # Checks for pending migrations and applies them before tests are run.
 # If you are not using ActiveRecord, you can remove these lines.
@@ -70,6 +71,10 @@ RSpec.configure do |config|
       FileUtils.rm_rf(Dir["#{Rails.root}/public/uploads_#{Rails.env}/"])
       FileUtils.rm_rf(Dir["#{Rails.root}/public/uploads/tmp"])
     end
+  end
+
+  config.after do |example|
+    save_and_open_page if (example.metadata[:type] == :feature) && example.exception.present? && (example.metadata[:open_on_error] == true)
   end
 end
 
