@@ -24,12 +24,4 @@ feature 'post', type: :feature do
       find('input[type="submit"]').click
     end.to change(Post, :count).by(1)
   end
-
-  scenario 'GET post' do
-    visit root_path
-    click_link('全投稿一覧')
-    expect(current_path).to eq "/ja/posts"
-    click_link('a[href="/ja/posts/1"]')
-    expect(current_path).to eq "/ja/posts/1"
-  end
 end
