@@ -14,7 +14,7 @@ feature 'post', type: :feature do
   end
 
   scenario "POST post" do
-    expect {
+    expect do
       visit root_path
       click_link('投稿する')
       expect(current_path).to eq "/ja/posts/new"
@@ -22,7 +22,7 @@ feature 'post', type: :feature do
       attach_file 'file', 'app/assets/images/first-slide.jpg', visible: false
       fill_in 'post_description', with: 'テストです'
       find('input[type="submit"]').click
-    }.to change(Post, :count).by(1)
+    end.to change(Post, :count).by(1)
   end
 
   scenario 'GET post' do

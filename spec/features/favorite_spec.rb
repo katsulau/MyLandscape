@@ -20,14 +20,14 @@ feature 'favorite', type: :feature do
     visit "ja/posts/1"
     expect(current_path).to eq "/ja/posts/1"
 
-    expect {
+    expect do
       find('button[class="good-btn"]').click
       sleep 0.5
-    }.to change(Favorite, :count).by(1)
+    end.to change(Favorite, :count).by(1)
 
-    expect {
+    expect do
       find('button[class="good-btn"]').click
       sleep 0.5
-    }.to change(Favorite, :count).by(-1)
+    end.to change(Favorite, :count).by(-1)
   end
 end
