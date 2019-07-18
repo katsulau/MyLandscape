@@ -10,6 +10,7 @@ AllCops:
     - public/*
     - vendor/**/*
     - Gemfile
+    - node_modules/node-sass/src/libsass/**/*
   # Rails向けのRails copsを実行。"rubocop -R"と同じ
   Rails:
     enabled: true
