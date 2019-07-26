@@ -2,7 +2,7 @@
 
 ## MyLandscape
 観光地の風景写真を投稿できるサイトです。ポートフォリオとして作成しました。  
-URL: https://my-landscape.com/    
+URL:[link]https://my-landscape.com/{:target="_blank"}    
 
 
 
@@ -36,7 +36,7 @@ Circle CIからデプロイを出来るよう構築する予定です。
 DNSにはRoute53を使用しており、ALBにSSL証明書をインストールすることでHTTPS通信を行えるよう設定しました。
 また、http通信は全てhttpsにリダイレクトするよう設定しています。
 
-画像保存にはS3を使用し、CloudFrontでCDN配信をしています。
+画像保存にはS3を使用し、CloudFrontでCDN配信をしています。(CDNについては今実装中です。)
 
 
 
