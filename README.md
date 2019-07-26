@@ -2,7 +2,7 @@
 
 ## MyLandscape
 観光地の風景写真を投稿できるサイトです。ポートフォリオとして作成しました。  
-[link](https://my-landscape.com/){:target="_blank"}    
+URL: https://my-landscape.com/  
 
 
 
