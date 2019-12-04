@@ -29,6 +29,8 @@ function initMap() {
           title: title
         });
 
+        console.log("test");
+
         var content;
           {
           content = '<div id="map_content"><p>' + title + '</p></div>';
